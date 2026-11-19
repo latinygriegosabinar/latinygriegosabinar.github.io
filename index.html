@@ -183,6 +183,15 @@ footer p{line-height:1.7}
   .pevau{grid-template-columns:1fr}
 }
 @media (max-width:520px){ .camino{grid-template-columns:1fr} body{font-size:17px} }
+.adultos h2 .tupuedes{color:var(--ocre);font-style:italic}
+.adultos .caja .num{font-family:var(--serif);font-size:40px;line-height:1;color:var(--ocre);display:block;margin-bottom:6px}
+.adultos .matricula{margin-top:22px;border:1.5px solid var(--ocre);background:rgba(201,146,58,.08);padding:22px 28px}
+.adultos .matricula h3{color:var(--ocre);font-size:26px;margin-bottom:6px}
+.adultos .matricula p{color:#E3D6C1;font-size:16.5px}
+.cita-adultos{margin-top:34px;text-align:center;display:flex;flex-direction:column;gap:4px}
+.cita-adultos .lat{font-family:var(--serif);font-style:italic;font-size:clamp(28px,3.6vw,40px);color:#FFF8EC}
+.cita-adultos .es{font-family:var(--serif);font-style:italic;font-size:20px;color:#F0C98A}
+.adultos .botones{justify-content:center;margin-top:24px}
 </style>
 </head>
 <body>
@@ -218,6 +227,7 @@ footer p{line-height:1.7}
         <div class="botones">
           <a class="btn btn-ocre" href="#itinerario">Bachillerato de Humanidades</a>
           <a class="btn btn-linea" href="#eso">Latín en 4.º de ESO</a>
+          <a class="btn btn-linea" href="#adultos">Bachillerato para adultos</a>
         </div>
       </div>
     </div>
@@ -316,15 +326,18 @@ footer p{line-height:1.7}
 
 <section id="adultos" class="adultos">
   <div class="wrap">
-    <p class="eyebrow">Educación de personas adultas</p>
-    <h2>Nunca es tarde para el latín y el griego</h2>
-    <p class="intro">Bachillerato de Humanidades para personas adultas, en modalidad semipresencial, con Latín I y II y Griego I y II.</p>
+    <p class="eyebrow">Bachillerato para personas adultas · Semipresencial</p>
+    <h2>Nunca es tarde para volver a estudiar.<br><span class="tupuedes">Tú puedes.</span></h2>
+    <p class="intro">¿Dejaste los estudios, trabajas o tienes familia a tu cargo? El Bachillerato de Humanidades semipresencial del IES Sabinar está pensado para ti: obtienes el mismo título de Bachiller que en el diurno, con Latín y Griego, sin renunciar a tu vida.</p>
     <div class="grid">
-      <div class="caja"><h3>Tres tardes a la semana</h3><p>12 horas presenciales, de 17:00 a 21:00: en 1.º, lunes, martes y jueves; en 2.º, lunes, miércoles y jueves. Compatible con el trabajo y la familia.</p></div>
-      <div class="caja"><h3>Semipresencial</h3><p>Combina las clases en el centro con el trabajo en la plataforma Moodle, a tu ritmo y con el seguimiento de tu profesorado.</p></div>
-      <div class="caja"><h3>Matrícula</h3><p>Del 1 al 10 de julio, con plazo extraordinario desde el 1 de septiembre y, si quedan plazas, hasta marzo. Información: 950 156 783 · tic@correo.ies-sabinar.com.</p></div>
+      <div class="caja"><span class="num">I</span><h3>No vienes todos los días</h3><p>Solo tres tardes a la semana, de 17:00 a 21:00. En 1.º, lunes, martes y jueves; en 2.º, lunes, miércoles y jueves.</p></div>
+      <div class="caja"><span class="num">II</span><h3>El resto, desde casa</h3><p>Las horas a distancia se trabajan en la plataforma Moodle de la Junta de Andalucía, con materiales, tareas y cuestionarios, a tu ritmo.</p></div>
+      <div class="caja"><span class="num">III</span><h3>Te atendemos a distancia</h3><p>Tu profesorado te acompaña por la plataforma y por correo: resuelve tus dudas y sigue tu progreso, con horarios flexibles dentro del calendario de entregas.</p></div>
+      <div class="caja"><span class="num">IV</span><h3>Mismo título, mismas puertas</h3><p>El título de Bachiller tiene la misma validez que en el diurno y te abre la PEvAU, la universidad y los ciclos de grado superior.</p></div>
     </div>
-    <p style="margin-top:22px"><a class="enlace-doc" href="https://www.ies-sabinar.com/uploads/49961-bachillerato-para-personas-adultas-ies-sabinar-2026-27-2.pdf">Descarga la hoja informativa del Bachillerato para personas adultas (PDF) →</a></p>
+    <div class="matricula"><h3>Matrícula</h3><p>Del 1 al 10 de julio. Plazo extraordinario desde el 1 de septiembre y, si quedan plazas, hasta marzo. Requisito: título de ESO o de Técnico de FP. Información: 950 156 783 · tic@correo.ies-sabinar.com.</p></div>
+    <p class="cita-adultos"><span class="lat">Possunt, quia posse videntur.</span><span class="es">"Pueden, porque creen que pueden." (Virgilio, Eneida V, 231)</span></p>
+    <div class="botones"><a class="btn btn-ocre" href="https://www.ies-sabinar.com/uploads/49961-bachillerato-para-personas-adultas-ies-sabinar-2026-27-2.pdf">Descarga la hoja informativa (PDF)</a><a class="btn btn-linea" href="mailto:marcelolorente@correo.ies-sabinar.com">Escríbenos</a></div>
   </div>
 </section>
 
@@ -403,15 +416,15 @@ footer p{line-height:1.7}
       <div class="profe"><h3>Marcelo Antonio Lorente Lindes</h3><p>Turno nocturno y semipresencial<br>marcelolorente@correo.ies-sabinar.com</p></div>
     </div>
     <p class="dpto">Departamento de Latín y Griego</p>
-    <p class="contacto-txt">¿Tienes dudas? Pregunta en el Departamento de Orientación de tu centro, a tu tutor o tutora, o escríbenos a través del correo del instituto.</p>
+    <p class="contacto-txt">¿Tienes dudas o quieres saber si Humanidades es para ti? Escríbenos directamente a <a href="mailto:marcelolorente@correo.ies-sabinar.com">marcelolorente@correo.ies-sabinar.com</a> o llama al instituto (950 156 783) y pregunta por el Departamento de Latín y Griego. Te atenderemos encantados.</p>
   </div>
 </section>
 
 <div class="greca" aria-hidden="true"></div>
 <footer>
   <div class="wrap">
-    <div><b>IES Sabinar</b><p>C/ Pío Baroja, 1 · 04740 Roquetas de Mar (Almería)<br><a href="https://www.ies-sabinar.com/">www.ies-sabinar.com</a> · info@correo.ies-sabinar.com</p></div>
-    <div><b>Teléfonos</b><p>Centro: 950 156 783<br>Secretaría: 671 530 999 / 671 530 998</p></div>
+    <div><b>IES Sabinar</b><p>C/ Pío Baroja, 1 · 04740 Roquetas de Mar (Almería)<br><a href="https://www.ies-sabinar.com/">www.ies-sabinar.com</a></p></div>
+    <div><b>Contacto</b><p>Teléfono: 950 156 783<br>tic@correo.ies-sabinar.com</p></div>
   </div>
 </footer>
 
