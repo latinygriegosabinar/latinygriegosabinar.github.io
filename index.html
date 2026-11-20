@@ -215,6 +215,18 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--ocre);outline-offse
 section[id]{scroll-margin-top:90px}
 @media (max-width:860px){section[id]{scroll-margin-top:150px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.puerta{transition:none}.puerta:hover{transform:none}}
+.salidas{margin-top:64px}
+.salidas .intro{max-width:780px;margin-top:12px}
+.salidas .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:28px}
+.area{background:#FBF6EE;border:1px solid var(--ocre);border-top:4px solid var(--rojo);padding:22px 22px 20px;display:flex;flex-direction:column;gap:8px}
+.area h3{font-size:25px;color:var(--rojo-osc);display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.area h3 .pond{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--negro);background:var(--ocre);padding:3px 8px;border-radius:2px;white-space:nowrap}
+.area p{font-size:16px}
+.area.otras{background:var(--marfil-2)}
+.aviso-pond{margin-top:18px;font-size:14.5px;color:#5A4A35;max-width:860px}
+.testimonio .foto-test{width:112px;height:112px;border-radius:50%;object-fit:cover;margin-bottom:18px}
+.salidas .dest{margin-top:22px;background:var(--rojo);color:#FFF8EC;padding:20px 26px;font-family:var(--serif);font-size:clamp(21px,2.4vw,26px);line-height:1.3;max-width:900px}
+.salidas .dest b{color:#F0C98A;font-weight:700}
 </style>
 </head>
 <body>
@@ -348,6 +360,23 @@ section[id]{scroll-margin-top:90px}
       <div class="dato"><div class="num">8,58 · 8,14</div><div class="txt">medias del IES Sabinar en la PEvAU 2026: Griego II y Latín II</div></div>
     </div>
     <p class="nota-pevau"><a class="enlace-doc" href="https://www.ies-sabinar.com/uploads/72232-latin-y-griego-en-la-pevau-ies-sabinar-2026-27.pdf">Consulta los grados en los que ponderan, con la normativa oficial (PDF) →</a></p>
+
+    <div class="salidas" id="salidas">
+      <p class="eyebrow">Salidas universitarias</p>
+      <h3 style="font-size:clamp(30px,4vw,42px);color:var(--rojo-osc)">¿Qué puedo estudiar después?</h3>
+      <p class="intro">Con el Bachillerato de Humanidades y la PAU puedes acceder a cualquier grado universitario. Y Latín II y Griego II te ayudan a subir la nota de admisión en muchísimos de ellos.</p>
+      <p class="dest">En las universidades andaluzas, <b>Latín II o Griego II ponderan en todos los grados de Artes y Humanidades y de Ciencias Sociales y Jurídicas</b>: más de 120 grados y dobles grados.</p>
+      <div class="grid">
+        <div class="area"><h3>Educación <span class="pond">0,2</span></h3><p>Educación Infantil, Educación Primaria y Educación Social, y sus dobles grados.</p></div>
+        <div class="area"><h3>Lenguas <span class="pond">0,2</span></h3><p>Filología Hispánica, Filología Clásica, Estudios Ingleses, Estudios Franceses, Estudios Árabes e Islámicos, Estudios de Asia Oriental, Lenguas Modernas, Lingüística, Literaturas Comparadas y Traducción e Interpretación.</p></div>
+        <div class="area"><h3>Historia y arte <span class="pond">0,2</span></h3><p>Historia, Historia del Arte, Geografía e Historia, Arqueología, Gestión Cultural, Cine y Cultura, e Historia y Ciencias de la Música.</p></div>
+        <div class="area"><h3>Pensamiento <span class="pond">0,2</span></h3><p>Filosofía, Humanidades, Información y Documentación, y el doble grado de Matemáticas y Filosofía.</p></div>
+        <div class="area"><h3>Comunicación <span class="pond">0,2</span></h3><p>Periodismo, también en sus dobles grados con Comunicación Audiovisual y con Ciencias Políticas.</p></div>
+        <div class="area"><h3>Derecho y más <span class="pond">Latín II 0,2</span></h3><p>Derecho y todos sus dobles grados, Relaciones Internacionales, Publicidad y Relaciones Públicas, Bellas Artes y Conservación y Restauración. Griego II también pondera en todos ellos (0,1, y 0,2 en algunos dobles grados).</p></div>
+        <div class="area otras"><h3>Y también… <span class="pond">0,1</span></h3><p>Administración y Dirección de Empresas, Economía, Finanzas y Contabilidad, Márketing, Turismo, Comunicación Audiovisual, Ciencias Políticas, Sociología, Trabajo Social, Relaciones Laborales, Pedagogía y Criminología, entre otros.</p></div>
+      </div>
+      <p class="aviso-pond">Fuente: parámetros de ponderación del Distrito Único Universitario de Andalucía para la admisión en el curso 2027-2028 y siguientes: <a href="https://www.juntadeandalucia.es/boja/2025/192/58">Acuerdo de 15 de mayo de 2025</a> (BOJA n.º 192, de 6 de octubre de 2025), con la <a href="https://www.juntadeandalucia.es/boja/2025/207/27">aclaración del BOJA n.º 207</a>, de 28 de octubre de 2025, y <a href="https://www.juntadeandalucia.es/boja/2026/112/47">Acuerdo de 1 de junio de 2026</a> (BOJA n.º 112, de 12 de junio de 2026). Los parámetros pueden revisarse y fuera de Andalucía cada universidad publica los suyos: antes de decidir, consulta la tabla oficial en el <a href="https://lajunta.es/portaldua">portal del Distrito Único Andaluz</a> o pregunta en Orientación.</p>
+    </div>
   </div>
 </section>
 
@@ -384,7 +413,7 @@ section[id]{scroll-margin-top:90px}
     <p class="eyebrow">Este curso</p>
     <h2>Actividades</h2>
     <div class="grid">
-      <article class="tarjeta"><div class="foto"><img src="taller-papiros.jpg" alt="Manos de un alumno escribiendo con cálamo sobre una hoja de papiro"></div><div class="cuerpo"><span class="fecha">Primer trimestre</span><h3>Taller de papiros</h3><p>Fabricamos nuestro propio papiro y escribimos sobre él como en la Antigüedad.</p></div></article>
+      <article class="tarjeta"><div class="foto"><img src="taller-papiros.jpg" loading="lazy" decoding="async" alt="Manos de un alumno escribiendo con cálamo sobre una hoja de papiro"></div><div class="cuerpo"><span class="fecha">Primer trimestre</span><h3>Taller de papiros</h3><p>Fabricamos nuestro propio papiro y escribimos sobre él como en la Antigüedad.</p></div></article>
       <article class="tarjeta"><div class="foto motivo"><span class="g" lang="grc">Ὀδύσσεια</span><small>la Odisea</small></div><div class="cuerpo"><span class="fecha">Diciembre de 2026</span><h3>"La Odisea" en el cine</h3><p>Salida para ver la adaptación del poema de Homero, con trabajo antes y después de la proyección.</p></div></article>
       <article class="tarjeta"><div class="foto motivo rojo"><span class="g" lang="la">Humanitas</span><small>humanidad, cultura</small></div><div class="cuerpo"><span class="fecha">Segundo trimestre</span><h3>Charlas en 4.º de ESO</h3><p>Con el Departamento de Orientación, presentamos el Bachillerato de Humanidades al alumnado que está a punto de elegir.</p></div></article>
     </div>
@@ -397,10 +426,12 @@ section[id]{scroll-margin-top:90px}
     <h2>Lo dicen quienes lo cursaron</h2>
     <div class="grid">
       <div>
+        <img class="foto-test" src="paolo-godoy.jpg" width="112" height="112" loading="lazy" decoding="async" alt="Paolo Godoy Lvova">
         <blockquote>Gracias al Latín y al Griego pude entrar en Derecho, la carrera que quería. Estudiar Humanidades me dio algo más valioso que conocimientos: una manera de pensar y de mirar más allá de lo evidente.</blockquote>
         <p class="autor"><b>Paolo Godoy Lvova</b> · Antiguo alumno del IES Sabinar · Grado en Derecho, Universidad de Granada</p>
       </div>
       <div>
+        <img class="foto-test" src="lucia-guerrero.jpg" width="112" height="112" loading="lazy" decoding="async" alt="Lucía Guerrero Barrionuevo">
         <blockquote>El Bachillerato de Humanidades me permitió desarrollar una visión más amplia y crítica del mundo y descubrir mi pasión por las lenguas. La formación que recibí en Latín y Griego me facilitó la carrera, y hoy trabajo como editora, traductora y redactora de contenidos educativos.</blockquote>
         <p class="autor"><b>Lucía Guerrero Barrionuevo</b> · Antigua alumna del IES Sabinar · Doble Grado en Estudios Ingleses y Filología Hispánica, Universidad de Almería</p>
       </div>
