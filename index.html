@@ -227,6 +227,17 @@ section[id]{scroll-margin-top:90px}
 .testimonio .foto-test{width:112px;height:112px;border-radius:50%;object-fit:cover;margin-bottom:18px}
 .salidas .dest{margin-top:22px;background:var(--rojo);color:#FFF8EC;padding:20px 26px;font-family:var(--serif);font-size:clamp(21px,2.4vw,26px);line-height:1.3;max-width:900px}
 .salidas .dest b{color:#F0C98A;font-weight:700}
+.faq{padding:84px 0 60px;background:var(--marfil-2)}
+.faq .lista{margin-top:28px;max-width:860px;display:flex;flex-direction:column;gap:10px}
+.faq details{background:#FBF6EE;border:1px solid var(--ocre);border-left:5px solid var(--rojo)}
+.faq summary{cursor:pointer;list-style:none;padding:16px 48px 16px 20px;font-family:var(--serif);font-size:21px;font-weight:600;color:var(--rojo-osc);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:26px;color:var(--ocre-osc);font-weight:400}
+.faq details[open] summary::after{content:"−"}
+.faq summary:focus-visible{outline:3px solid var(--ocre);outline-offset:2px}
+.faq .resp{padding:0 20px 18px;font-size:17px;line-height:1.6}
+.faq .resp p{margin:0 0 10px}
+.faq .resp a{color:var(--rojo);font-weight:600}
 </style>
 </head>
 <body>
@@ -242,6 +253,7 @@ section[id]{scroll-margin-top:90px}
       <a href="#adultos">Personas adultas</a>
       <a href="#actividades">Actividades</a>
       <a href="#recursos">Recursos</a>
+      <a href="#preguntas">Preguntas</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </div>
@@ -326,7 +338,8 @@ section[id]{scroll-margin-top:90px}
       <h2>Latín en 4.º de ESO</h2>
       <p class="grande">Tu primer contacto con el latín y la mejor puerta al Bachillerato de Humanidades.</p>
       <p>Una materia para descubrir de dónde vienen las palabras que usas cada día, cómo se vivía en Roma y por qué los mitos clásicos siguen apareciendo en el cine, las series y los videojuegos.</p>
-      <p><a class="enlace-doc" href="https://www.ies-sabinar.com/uploads/49591-0-6717641506232997776.pdf">Descarga la presentación de Latín en 4.º de ESO (PDF) →</a></p>
+      <p><a class="enlace-doc" href="https://www.ies-sabinar.com/uploads/49591-0-6717641506232997776.pdf">Descarga la presentación de Latín en 4.º de ESO (PDF) →</a>
+      <a class="recurso" href="https://www.ies-sabinar.com/uploads/101250-triptico-latin-4-eso-ies-sabinar-2026-27.pdf"><div>Tríptico de Latín en 4.º de ESO<small>PDF para imprimir y compartir</small></div><span class="f">→</span></a></p>
     </div>
     <div class="temas">
       <h3>Qué harás en clase</h3>
@@ -451,16 +464,36 @@ section[id]{scroll-margin-top:90px}
       <a class="recurso" href="https://www.ies-sabinar.com/uploads/39007-el-alfabeto-griego-latin-y-griego-ies-sabinar.pdf"><div>El alfabeto griego<small>Ficha 1: las 24 letras y sus palabras</small></div><span class="f">→</span></a>
       <a class="recurso" href="https://www.ies-sabinar.com/uploads/15663-del-latin-al-castellano-latin-y-griego-ies-sabinar.pdf"><div>Del latín al castellano<small>Ficha 2: reglas de evolución fonética</small></div><span class="f">→</span></a>
       <a class="recurso" href="https://www.ies-sabinar.com/uploads/56258-latin-vivo-latin-y-griego-ies-sabinar.pdf"><div>Latín vivo<small>Ficha 3: expresiones latinas de hoy</small></div><span class="f">→</span></a>
+      <a class="recurso" href="https://www.ies-sabinar.com/uploads/60996-turaniana-la-roquetas-romana-latin-y-griego-ies-sabinar.pdf"><div>Turaniana: la Roquetas romana<small>Ficha 4: historia, yacimiento y palabras latinas</small></div><span class="f">→</span></a>
       <a class="recurso" href="https://www.ies-sabinar.com/uploads/41336-latin-y-griego-en-la-pevau-ies-sabinar-2026-27.pdf"><div>Latín y Griego en la PEvAU<small>Ponderaciones y nota de admisión</small></div><span class="f">→</span></a>
     </div>
     <h3 class="subrec">Para conocernos</h3>
     <div class="grid">
       <a class="recurso" href="https://www.ies-sabinar.com/uploads/99269-0-172785363835926173.pdf"><div>Tríptico del Bachillerato de Humanidades<small>PDF para imprimir y compartir</small></div><span class="f">→</span></a>
+      <a class="recurso" href="https://www.ies-sabinar.com/uploads/20257-por-que-elegir-humanidades-familias-ies-sabinar-2026-27.pdf"><div>¿Por qué elegir Humanidades?<small>Guía para familias de 3.º y 4.º de ESO</small></div><span class="f">→</span></a>
       <a class="recurso" href="https://www.ies-sabinar.com/uploads/103090-bachillerato-de-humanidades-ies-sabinar-2026-27.pdf"><div>Bachillerato de Humanidades<small>Diurno y nocturno, en imágenes</small></div><span class="f">→</span></a>
       <a class="recurso" href="https://www.ies-sabinar.com/uploads/49591-0-6717641506232997776.pdf"><div>Latín en 4.º de ESO<small>Qué es y qué harás en clase</small></div><span class="f">→</span></a>
       <a class="recurso" href="https://www.ies-sabinar.com/uploads/49961-bachillerato-para-personas-adultas-ies-sabinar-2026-27-2.pdf"><div>Bachillerato para personas adultas<small>Horario, requisitos y matrícula</small></div><span class="f">→</span></a>
       <a class="recurso" href="https://www.ies-sabinar.com/departamentos"><div>Programaciones didácticas<small>En la página de Departamentos</small></div><span class="f">→</span></a>
       <a class="recurso" href="https://www.ies-sabinar.com/recursos/10/latin-y-griego"><div>Biblioteca de recursos<small>Todo el material del departamento</small></div><span class="f">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="preguntas" class="faq">
+  <div class="wrap">
+    <p class="eyebrow">Resolvemos tus dudas</p>
+    <h2>Preguntas frecuentes</h2>
+    <div class="lista">
+      <details><summary>¿Tengo que haber estudiado Latín en 4.º de ESO para hacer el Bachillerato de Humanidades?</summary><div class="resp"><p>No. En 1.º de Bachillerato, Latín I y Griego I empiezan desde cero. Si has cursado Latín en 4.º, llegas con ventaja, pero no es imprescindible.</p></div></details>
+      <details><summary>¿Es muy difícil?</summary><div class="resp"><p>Exige constancia, como cualquier materia, pero se aprende paso a paso y con mucho acompañamiento. Los resultados lo demuestran: en la PEvAU de 2026, el alumnado del IES Sabinar obtuvo una media de 8,58 en Griego II y de 8,14 en Latín II, entre las más altas del centro.</p></div></details>
+      <details><summary>¿Humanidades solo sirve para ser profesor?</summary><div class="resp"><p>No. Lleva a Derecho, Periodismo, Educación, Traducción e Interpretación, Historia, Publicidad, Relaciones Internacionales, edición de contenidos, lingüística computacional, oposiciones… Mira el apartado <a href="#salidas">"¿Qué puedo estudiar después?"</a>.</p></div></details>
+      <details><summary>¿Me cierra puertas si luego quiero estudiar otra cosa?</summary><div class="resp"><p>No. Con el Bachillerato y la PAU puedes acceder a cualquier grado universitario. Las ponderaciones solo suman: en algunos grados, Latín II y Griego II te dan puntos extra; en los demás, cuentan las otras materias.</p></div></details>
+      <details><summary>¿Cuántos puntos me pueden dar Latín II y Griego II?</summary><div class="resp"><p>Hasta 4 puntos. La nota de admisión suma a la nota de acceso (hasta 10) las dos materias aprobadas más favorables, multiplicadas por su ponderación (0,1 o 0,2). En Andalucía, Latín II o Griego II ponderan en todos los grados de Artes y Humanidades y de Ciencias Sociales y Jurídicas. Lo tienes todo, con las fuentes oficiales, en la ficha <a href="https://www.ies-sabinar.com/uploads/41336-latin-y-griego-en-la-pevau-ies-sabinar-2026-27.pdf">"Latín y Griego en la PEvAU"</a>.</p></div></details>
+      <details><summary>¿Sirve el latín si voy a estudiar Ciencias?</summary><div class="resp"><p>Sí. Buena parte del vocabulario de la Medicina, la Biología, la Química o el Derecho es de origen grecolatino. Y traducir entrena justo lo que piden todas las carreras: comprender, analizar y expresarse con precisión.</p></div></details>
+      <details><summary>Estudio en otro instituto. ¿Puedo hacer el Bachillerato de Humanidades en el IES Sabinar?</summary><div class="resp"><p>Sí. Puedes pedir plaza en el plazo de admisión, en marzo. Pregunta en el Departamento de Orientación de tu centro o llama al IES Sabinar.</p></div></details>
+      <details><summary>Soy una persona adulta y trabajo. ¿Puedo estudiarlo?</summary><div class="resp"><p>Sí. El IES Sabinar ofrece el Bachillerato de Humanidades para personas adultas en régimen semipresencial: pocas horas de clase por la tarde-noche y el resto en la plataforma Moodle, a tu ritmo y con seguimiento del profesorado. Tienes toda la información en el apartado <a href="#adultos">"Personas adultas"</a>.</p></div></details>
+      <details><summary>¿Dónde puedo preguntar?</summary><div class="resp"><p>En el Departamento de Orientación, en el Departamento de Latín y Griego o llamando al instituto al 950 156 783. Te atenderemos encantados.</p></div></details>
     </div>
   </div>
 </section>
