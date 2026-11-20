@@ -5,11 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Latín y Griego · IES Sabinar</title>
 <meta name="description" content="Departamento de Latín y Griego del IES Sabinar (Roquetas de Mar): Latín en 4.º de ESO, Bachillerato de Humanidades y Bachillerato de Humanidades para personas adultas (semipresencial).">
+<link rel="canonical" href="https://latinygriegosabinar.github.io/">
+<meta name="theme-color" content="#1B1714">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Latín y Griego · IES Sabinar">
+<meta property="og:title" content="Latín y Griego · IES Sabinar">
+<meta property="og:description" content="Las palabras tienen historia. Latín en 4.º de ESO, Bachillerato de Humanidades y Bachillerato para personas adultas (semipresencial) en Roquetas de Mar.">
+<meta property="og:url" content="https://latinygriegosabinar.github.io/">
+<meta property="og:image" content="https://latinygriegosabinar.github.io/tarjeta.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Latín y Griego, IES Sabinar: recuadro rojo con marco dorado y el lema &quot;Las palabras tienen historia&quot;">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+SC:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --rojo:#8E2A22; --rojo-osc:#6A1D17; --ocre:#C9923A; --ocre-osc:#875A12;
+  --rojo:#8E2A22; --rojo-osc:#6A1D17; --ocre:#C9923A; --ocre-osc:#7A510F;
   --marfil:#F4EBDC; --marfil-2:#EADCC4; --negro:#1B1714; --tinta:#1F2933;
   --serif:'Cormorant Garamond', Georgia, serif; --sc:'Cormorant SC', Georgia, serif;
   --sans:'Work Sans', system-ui, sans-serif;
@@ -192,13 +208,21 @@ footer p{line-height:1.7}
 .cita-adultos .lat{font-family:var(--serif);font-style:italic;font-size:clamp(28px,3.6vw,40px);color:#FFF8EC}
 .cita-adultos .es{font-family:var(--serif);font-style:italic;font-size:20px;color:#F0C98A}
 .adultos .botones{justify-content:center;margin-top:24px}
+.saltar{position:absolute;left:12px;top:-60px;z-index:20;background:var(--ocre);color:var(--negro);padding:10px 16px;font-weight:600;text-decoration:none}
+.saltar:focus{top:12px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--ocre);outline-offset:3px}
+.cuadro a:focus-visible,.p-ocre:focus-visible{outline-color:#FFF8EC}
+section[id]{scroll-margin-top:90px}
+@media (max-width:860px){section[id]{scroll-margin-top:150px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.puerta{transition:none}.puerta:hover{transform:none}}
 </style>
 </head>
 <body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
 
 <header class="top">
   <div class="wrap">
-    <a class="marca" href="#inicio"><b>Latín y Griego</b><span>IES Sabinar · Roquetas de Mar</span></a>
+    <a class="marca" href="#inicio" aria-label="Latín y Griego, IES Sabinar: ir al inicio"><b>Latín y Griego</b><span>IES Sabinar · Roquetas de Mar</span></a>
     <nav aria-label="Secciones">
       <a href="#porque">¿Por qué?</a>
       <a href="#eso">4.º de ESO</a>
@@ -211,6 +235,7 @@ footer p{line-height:1.7}
   </div>
 </header>
 
+<main id="contenido">
 <section id="inicio" class="pared">
   <div class="wrap">
     <div class="lateral juan">
@@ -225,7 +250,7 @@ footer p{line-height:1.7}
         <p class="eyebrow">Departamento de Latín y Griego</p>
         <h1>Las palabras tienen historia.</h1>
         <p class="sub">Ven a descubrirla con nosotros: en la ESO, en el Bachillerato de Humanidades y en la enseñanza de personas adultas.</p>
-        <p class="lema">Sapere aude: "atrévete a saber".</p>
+        <p class="lema"><span lang="la">Sapere aude</span>: "atrévete a saber".</p>
         <div class="botones">
           <a class="btn btn-ocre" href="#itinerario">Bachillerato de Humanidades</a>
           <a class="btn btn-linea" href="#eso">Latín en 4.º de ESO</a>
@@ -234,9 +259,9 @@ footer p{line-height:1.7}
       </div>
     </div>
     <div class="lateral" aria-hidden="true">
-      <span class="palabra">historia</span><small>ἱστορία, investigación</small>
+      <span class="palabra">historia</span><small><span lang="grc">ἱστορία</span>, investigación</small>
       <hr>
-      <span class="palabra">schola</span><small>σχολή, tiempo libre</small>
+      <span class="palabra" lang="la">schola</span><small><span lang="grc">σχολή</span>, tiempo libre</small>
     </div>
   </div>
   <div class="greca zocalo" aria-hidden="true"></div>
@@ -274,10 +299,10 @@ footer p{line-height:1.7}
     <p class="eyebrow">Cuatro razones</p>
     <h2>¿Por qué Latín y Griego?</h2>
     <div class="grid">
-      <div class="raiz"><span class="lat">Lingua</span><span class="trad">lengua</span><h3>Entiende tu idioma</h3><p>La mayor parte del vocabulario del castellano viene del latín. Conocer las raíces mejora la comprensión y la ortografía.</p></div>
-      <div class="raiz"><span class="lat">Scientia</span><span class="trad">conocimiento</span><h3>El idioma de la ciencia</h3><p>Medicina, biología y tecnología hablan con raíces griegas y latinas. Quien las conoce, entiende antes.</p></div>
-      <div class="raiz"><span class="lat">Ratio</span><span class="trad">razón</span><h3>Aprende a razonar</h3><p>Traducir es analizar, ordenar y decidir: un entrenamiento que sirve para cualquier estudio.</p></div>
-      <div class="raiz"><span class="lat">Radix</span><span class="trad">raíz</span><h3>Las raíces de Europa</h3><p>Mitología, filosofía, democracia, derecho y teatro: Grecia y Roma explican mucho de lo que somos.</p></div>
+      <div class="raiz"><span class="lat" lang="la">Lingua</span><span class="trad">lengua</span><h3>Entiende tu idioma</h3><p>La mayor parte del vocabulario del castellano viene del latín. Conocer las raíces mejora la comprensión y la ortografía.</p></div>
+      <div class="raiz"><span class="lat" lang="la">Scientia</span><span class="trad">conocimiento</span><h3>El idioma de la ciencia</h3><p>Medicina, biología y tecnología hablan con raíces griegas y latinas. Quien las conoce, entiende antes.</p></div>
+      <div class="raiz"><span class="lat" lang="la">Ratio</span><span class="trad">razón</span><h3>Aprende a razonar</h3><p>Traducir es analizar, ordenar y decidir: un entrenamiento que sirve para cualquier estudio.</p></div>
+      <div class="raiz"><span class="lat" lang="la">Radix</span><span class="trad">raíz</span><h3>Las raíces de Europa</h3><p>Mitología, filosofía, democracia, derecho y teatro: Grecia y Roma explican mucho de lo que somos.</p></div>
     </div>
   </div>
 </section>
@@ -338,16 +363,16 @@ footer p{line-height:1.7}
       <div class="caja"><span class="num">IV</span><h3>Mismo título, mismas puertas</h3><p>El título de Bachiller tiene la misma validez que en el diurno y te abre la PEvAU, la universidad y los ciclos de grado superior.</p></div>
     </div>
     <div class="matricula"><h3>Matrícula</h3><p>Del 1 al 10 de julio. Plazo extraordinario desde el 1 de septiembre y, si quedan plazas, hasta marzo. Requisito: título de ESO o de Técnico de FP. Información: 950 156 783 · tic@correo.ies-sabinar.com.</p></div>
-    <p class="cita-adultos"><span class="lat">Possunt, quia posse videntur.</span><span class="es">"Pueden, porque creen que pueden." (Virgilio, Eneida V, 231)</span></p>
+    <p class="cita-adultos"><span class="lat" lang="la">Possunt, quia posse videntur.</span><span class="es">"Pueden, porque creen que pueden." (Virgilio, Eneida V, 231)</span></p>
     <div class="botones"><a class="btn btn-ocre" href="https://www.ies-sabinar.com/uploads/49961-bachillerato-para-personas-adultas-ies-sabinar-2026-27-2.pdf">Descarga la hoja informativa (PDF)</a><a class="btn btn-linea" href="mailto:marcelolorente@correo.ies-sabinar.com">Escríbenos</a></div>
   </div>
 </section>
 
-<section class="palabra-sem">
+<section class="palabra-sem" aria-label="La palabra de la semana">
   <div class="wrap">
     <div class="tablilla"><div class="tablilla-in">
       <p class="eyebrow">La palabra de la semana</p>
-      <span class="lat">Candidatus</span>
+      <span class="lat" lang="la">Candidatus</span>
       <span class="es">candidato: "vestido de blanco"</span>
       <p>En Roma, quienes aspiraban a un cargo público llevaban una toga blanqueada para hacerse notar. De ahí viene nuestro "candidato", y también "cándido".</p>
     </div></div>
@@ -360,8 +385,8 @@ footer p{line-height:1.7}
     <h2>Actividades</h2>
     <div class="grid">
       <article class="tarjeta"><div class="foto"><img src="taller-papiros.jpg" alt="Manos de un alumno escribiendo con cálamo sobre una hoja de papiro"></div><div class="cuerpo"><span class="fecha">Primer trimestre</span><h3>Taller de papiros</h3><p>Fabricamos nuestro propio papiro y escribimos sobre él como en la Antigüedad.</p></div></article>
-      <article class="tarjeta"><div class="foto motivo"><span class="g">Ὀδύσσεια</span><small>la Odisea</small></div><div class="cuerpo"><span class="fecha">Diciembre de 2026</span><h3>"La Odisea" en el cine</h3><p>Salida para ver la adaptación del poema de Homero, con trabajo antes y después de la proyección.</p></div></article>
-      <article class="tarjeta"><div class="foto motivo rojo"><span class="g">Humanitas</span><small>humanidad, cultura</small></div><div class="cuerpo"><span class="fecha">Segundo trimestre</span><h3>Charlas en 4.º de ESO</h3><p>Con el Departamento de Orientación, presentamos el Bachillerato de Humanidades al alumnado que está a punto de elegir.</p></div></article>
+      <article class="tarjeta"><div class="foto motivo"><span class="g" lang="grc">Ὀδύσσεια</span><small>la Odisea</small></div><div class="cuerpo"><span class="fecha">Diciembre de 2026</span><h3>"La Odisea" en el cine</h3><p>Salida para ver la adaptación del poema de Homero, con trabajo antes y después de la proyección.</p></div></article>
+      <article class="tarjeta"><div class="foto motivo rojo"><span class="g" lang="la">Humanitas</span><small>humanidad, cultura</small></div><div class="cuerpo"><span class="fecha">Segundo trimestre</span><h3>Charlas en 4.º de ESO</h3><p>Con el Departamento de Orientación, presentamos el Bachillerato de Humanidades al alumnado que está a punto de elegir.</p></div></article>
     </div>
   </div>
 </section>
@@ -421,6 +446,7 @@ footer p{line-height:1.7}
     <p class="contacto-txt">¿Tienes dudas o quieres saber si Humanidades es para ti? Escríbenos directamente a <a href="mailto:marcelolorente@correo.ies-sabinar.com">marcelolorente@correo.ies-sabinar.com</a> o llama al instituto (950 156 783) y pregunta por el Departamento de Latín y Griego. Te atenderemos encantados.</p>
   </div>
 </section>
+</main>
 
 <div class="greca" aria-hidden="true"></div>
 <footer>
@@ -438,7 +464,7 @@ footer p{line-height:1.7}
 var i=Math.floor((Date.now()-Date.UTC(2026,8,6,22))/6048e5);if(i<0)i=0;var p=P[i%P.length];
 var b=document.querySelector(".palabra-sem .tablilla-in");if(!b)return;
 b.querySelector(".eyebrow").textContent="La palabra de la semana · "+p[0];
-b.querySelector(".lat").textContent=p[1];
+var l=b.querySelector(".lat");l.textContent=p[1];l.lang=(p[0]=="griego"?"grc":"la");
 b.querySelector(".es").textContent=(p[2]?p[2]+" · ":"")+p[3];
 b.querySelector("p:not(.eyebrow)").textContent=p[4];})();
 </script>
