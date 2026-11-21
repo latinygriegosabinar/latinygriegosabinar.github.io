@@ -283,6 +283,10 @@ header.top a:focus-visible,.pared a:focus-visible,.adultos a:focus-visible,foote
 .activ{padding:84px 0 40px}
 .palabra-sem{padding:44px 0 84px}
 a[href^="tel"]{white-space:nowrap}
+.aula-fotos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:22px;margin-top:30px}
+.aula-fotos figure{margin:0;background:#FBF6EE;border:1px solid var(--marfil-2)}
+.aula-fotos img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-bottom:4px solid var(--rojo)}
+.aula-fotos figcaption{padding:12px 18px 14px;font-size:15.5px;color:#5A4A35}
 footer .legal{flex-basis:100%;font-size:14px;color:#B9AC97;border-top:1px solid rgba(201,146,58,.35);padding-top:16px}
 footer a[href^="tel"],.adultos a[href^="tel"],.adultos .matricula a{color:#F0C98A}
 @media (max-width:860px){
@@ -526,8 +530,12 @@ footer a[href^="tel"],.adultos a[href^="tel"],.adultos .matricula a{color:#F0C98
   <div class="wrap">
     <p class="eyebrow">Curso 2026-2027</p>
     <h2>Actividades</h2>
+    <div class="aula-fotos">
+      <figure><img src="aula-latin-griego-800.jpg" srcset="aula-latin-griego-800.jpg 800w, aula-latin-griego.jpg 1600w" sizes="(max-width:860px) 100vw, 560px" width="1600" height="1200" loading="lazy" decoding="async" alt="Pared del aula de Latín y Griego: el alfabeto griego en letras rojas, doradas y plateadas, papiros escritos por el alumnado y árboles de palabras"><figcaption>Nuestra aula: el alfabeto griego, los papiros del taller y los árboles de palabras del alumnado.</figcaption></figure>
+      <figure><img src="papiros-pared-800.jpg" srcset="papiros-pared-800.jpg 800w, papiros-pared.jpg 1600w" sizes="(max-width:860px) 100vw, 560px" width="1600" height="1200" loading="lazy" decoding="async" alt="Papiros con el comienzo de la Ilíada y de la Odisea en griego y la frase de Hipócrates &quot;La vida es breve, pero el arte es duradero&quot;"><figcaption>Homero en griego, escrito a mano: el comienzo de la <i>Ilíada</i> y de la <i>Odisea</i>.</figcaption></figure>
+    </div>
     <div class="grid">
-      <article class="tarjeta"><div class="foto"><img src="taller-papiros.jpg" loading="lazy" decoding="async" alt="Manos de un alumno escribiendo con cálamo sobre una hoja de papiro"></div><div class="cuerpo"><span class="fecha">Primer trimestre</span><h3>Taller de papiros</h3><p>Fabricamos nuestro propio papiro y escribimos sobre él como en la Antigüedad.</p></div></article>
+      <article class="tarjeta"><div class="foto"><img src="taller-papiros.jpg" loading="lazy" decoding="async" alt="Hojas de papiro escritas por el alumnado con textos latinos y griegos"></div><div class="cuerpo"><span class="fecha">Primer trimestre</span><h3>Taller de papiros</h3><p>Escribimos sobre papiro, como en la Antigüedad, versos de Homero, Virgilio y Horacio.</p></div></article>
       <article class="tarjeta"><div class="foto motivo"><span class="g" lang="grc">Ὀδύσσεια</span><small>la Odisea</small></div><div class="cuerpo"><span class="fecha">Diciembre de 2026</span><h3>"La Odisea" en el cine</h3><p>Salida para ver la adaptación del poema de Homero, con trabajo antes y después de la proyección.</p></div></article>
       <article class="tarjeta"><div class="foto motivo rojo"><span class="g" lang="la">Humanitas</span><small>humanidad, cultura</small></div><div class="cuerpo"><span class="fecha">Segundo trimestre</span><h3>Charlas en 4.º de ESO</h3><p>Con el Departamento de Orientación, presentamos el Bachillerato de Humanidades al alumnado que está a punto de elegir.</p></div></article>
     </div>
