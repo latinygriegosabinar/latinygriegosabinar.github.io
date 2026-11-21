@@ -387,3 +387,13 @@ footer a[href^="tel"],.adultos a[href^="tel"],.adultos .matricula a{color:#F0C98
 .pasarela.sola{padding-top:8px}
 header.top nav a[aria-current="page"]{color:#F0C98A}
 .enlace-sec{display:inline-block;margin-top:14px;font-weight:600;color:var(--rojo-osc)}
+
+.banda{margin:0;position:relative;background:var(--negro);line-height:0}
+.banda img{display:block;width:100%;height:clamp(200px,30vw,440px);object-fit:cover}
+.banda figcaption{line-height:1.45;background:var(--negro);color:#E3D6C1;font-size:14px;padding:10px 24px;text-align:center}
+.banda figcaption b{color:#FFF8EC;font-weight:600}
+.banda figcaption a{color:#F0C98A}
+.cab-pag.con-arte{padding-bottom:0}
+.cab-pag.con-arte .banda{margin-top:36px}
+.banda.entera{background:var(--negro);text-align:center}
+.banda.entera img{height:auto;max-width:960px;margin:0 auto}
