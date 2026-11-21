@@ -23,10 +23,27 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://latinygriegosabinar.github.io/tarjeta.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"HighSchool","name":"IES Sabinar","url":"https://www.ies-sabinar.com/","telephone":"+34950156783","address":{"@type":"PostalAddress","streetAddress":"C/ Pío Baroja, 1","postalCode":"04740","addressLocality":"Roquetas de Mar","addressRegion":"Almería","addressCountry":"ES"},"department":{"@type":"EducationalOrganization","name":"Departamento de Latín y Griego del IES Sabinar","url":"https://latinygriegosabinar.github.io/","description":"Latín en 4.º de ESO, Bachillerato de Humanidades (Latín y Griego) y Bachillerato semipresencial para personas adultas."}}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+SC:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/cormorant-garamond-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/work-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/cormorant-garamond-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/cormorant-garamond-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/cormorant-garamond-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/cormorant-garamond-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-ext-500-italic.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-500-italic.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Cormorant SC';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/cormorant-sc-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Cormorant SC';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/cormorant-sc-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Cormorant SC';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/cormorant-sc-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Cormorant SC';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/cormorant-sc-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Work Sans';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/work-sans-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Work Sans';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/work-sans-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Work Sans';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/work-sans-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Work Sans';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/work-sans-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Work Sans';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/work-sans-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Work Sans';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/work-sans-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 :root{
   --rojo:#8E2A22; --rojo-osc:#6A1D17; --ocre:#C9923A; --ocre-osc:#7A510F;
   --marfil:#F4EBDC; --marfil-2:#EADCC4; --negro:#1B1714; --tinta:#1F2933;
@@ -306,6 +323,26 @@ footer a[href^="tel"],.adultos a[href^="tel"],.adultos .matricula a{color:#F0C98
   .cuadro-in{padding:34px 24px}
   .pared{padding-top:28px}
 }
+
+.undia{padding:76px 0;background:var(--marfil)}
+.undia .intro{font-size:20px;max-width:780px;margin-top:12px}
+.undia .linea{list-style:none;margin:34px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:0;border-top:3px solid var(--rojo)}
+.undia .linea li{padding:20px 20px 22px 0;margin-right:20px;border-bottom:1px solid var(--ocre);display:flex;flex-direction:column;gap:6px}
+.undia .min{font-family:var(--sc);font-size:16px;letter-spacing:.14em;color:var(--ocre-osc)}
+.undia .linea h3{font-size:25px;color:var(--rojo)}
+.undia .linea p{font-size:16.5px;margin:0}
+.undia .orient{margin:18px 0 0;font-size:16px;font-style:italic;color:#5A4A36}
+.frase{margin-top:30px;background:var(--negro);color:#F6E7D2;border:1.5px solid var(--ocre);padding:30px 28px}
+.frase h3{font-size:28px;color:#FFF8EC}
+.frase .ayuda{font-size:16.5px;margin:6px 0 20px;color:#EAD9BC}
+.frase .palabras{display:flex;flex-wrap:wrap;gap:10px}
+.frase button{font-family:var(--serif);font-size:30px;font-weight:600;line-height:1;padding:12px 18px;background:transparent;color:#F0C98A;border:1.5px solid var(--ocre);cursor:pointer}
+.frase button:hover{background:rgba(201,146,58,.16)}
+.frase button[aria-pressed="true"]{background:var(--ocre);color:var(--negro)}
+.frase button:focus-visible{outline:3px solid #FFF8EC;outline-offset:3px}
+.frase .pista{min-height:3.4em;margin:20px 0 0;font-size:18px}
+.frase .pista b{color:#FFF8EC}
+.frase .solucion{margin:14px 0 0;font-family:var(--serif);font-style:italic;font-size:24px;color:#F0C98A}
 </style>
 </head>
 <body>
@@ -422,6 +459,38 @@ footer a[href^="tel"],.adultos a[href^="tel"],.adultos .matricula a{color:#F0C98
     </div>
   </div>
 </section>
+
+<section id="undia" class="undia">
+  <div class="wrap">
+    <p class="eyebrow">Sesenta minutos</p>
+    <h2>Un día en clase de Latín</h2>
+    <p class="intro">No hace falta saber nada antes de entrar. Así puede ser una clase, de principio a fin.</p>
+    <ol class="linea">
+      <li><span class="min">Minuto 0</span><h3>Una palabra para empezar</h3><p>Una palabra latina en la pizarra y todo lo que ha dejado en castellano: de <i lang="la">aqua</i>, agua, acuario, acueducto y acuático.</p></li>
+      <li><span class="min">Minuto 10</span><h3>Un texto delante</h3><p>Leemos en voz alta una frase o un texto breve. El latín se pronuncia casi como se escribe.</p></li>
+      <li><span class="min">Minuto 20</span><h3>El puzle</h3><p>Cada terminación dice qué papel hace cada palabra. Analizamos, ordenamos y traducimos entre todos.</p></li>
+      <li><span class="min">Minuto 40</span><h3>Roma y Grecia</h3><p>Un mito, una costumbre, un edificio o un personaje: lo que hay detrás del texto que acabamos de leer.</p></li>
+      <li><span class="min">Minuto 50</span><h3>Ahora tú</h3><p>Un reto de etimología, un juego o un taller, como el de papiros que decora nuestra aula.</p></li>
+    </ol>
+    <p class="orient">Este esquema es orientativo: no todas las clases son iguales ni siguen este orden. Hay días de taller, de lectura, de repaso o de salida.</p>
+    <div class="frase">
+      <h3>Prueba el puzle</h3>
+      <p class="ayuda">Pulsa cada palabra de esta frase para descubrir qué hace en ella.</p>
+      <div class="palabras" lang="la">
+        <button type="button" aria-pressed="false" data-p="&lt;b&gt;Magister&lt;/b&gt;, &quot;el profesor&quot;. Es quien hace la acción: el sujeto. De aquí vienen maestro, magisterio y máster.">Magister</button>
+        <button type="button" aria-pressed="false" data-p="&lt;b&gt;discipulis&lt;/b&gt;, &quot;a los alumnos&quot;. La terminación -is indica a quién se cuenta: el complemento indirecto. De aquí vienen discípulo y disciplina.">discipulis</button>
+        <button type="button" aria-pressed="false" data-p="&lt;b&gt;fabulam&lt;/b&gt;, &quot;una historia&quot;. La terminación -am indica qué se cuenta: el complemento directo. De aquí vienen fábula, fabuloso y, por evolución, habla.">fabulam</button>
+        <button type="button" aria-pressed="false" data-p="&lt;b&gt;narrat&lt;/b&gt;, &quot;cuenta&quot;. La -t final indica que lo hace él o ella. El verbo suele ir al final. De aquí vienen narrar y narrador.">narrat</button>
+      </div>
+      <p class="pista" id="pista" aria-live="polite">El latín no tiene artículos y el orden de las palabras es libre: lo que manda es la terminación.</p>
+      <p class="solucion" id="solucion" hidden>"El profesor cuenta una historia a los alumnos."</p>
+    </div>
+  </div>
+</section>
+<script>
+(function(){var bs=document.querySelectorAll('.frase button'),p=document.getElementById('pista'),so=document.getElementById('solucion'),v={};
+bs.forEach(function(b,i){b.addEventListener('click',function(){bs.forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');p.innerHTML=b.dataset.p;v[i]=1;if(Object.keys(v).length===bs.length)so.hidden=false;});});})();
+</script>
 
 <div class="greca negra" aria-hidden="true"></div>
 
@@ -579,6 +648,7 @@ footer a[href^="tel"],.adultos a[href^="tel"],.adultos .matricula a{color:#F0C98
       <a class="recurso" href="https://www.ies-sabinar.com/uploads/15663-del-latin-al-castellano-latin-y-griego-ies-sabinar.pdf"><div>Del latín al castellano<small>Ficha 2: reglas de evolución fonética</small></div><span class="f">→</span></a>
       <a class="recurso" href="https://www.ies-sabinar.com/uploads/56258-latin-vivo-latin-y-griego-ies-sabinar.pdf"><div>Latín vivo<small>Ficha 3: expresiones latinas de hoy</small></div><span class="f">→</span></a>
       <a class="recurso" href="https://www.ies-sabinar.com/uploads/47325-turaniana-la-roquetas-romana-latin-y-griego-ies-sabinar.pdf"><div>Turaniana: la Roquetas romana<small>Ficha 4: historia, yacimiento y palabras latinas</small></div><span class="f">→</span></a>
+      <a class="recurso" href="https://www.ies-sabinar.com/uploads/51750-mitologia-en-tu-dia-a-dia-latin-y-griego-ies-sabinar.pdf"><div>Mitología en tu día a día<small>Ficha 5: dioses y héroes en las palabras de hoy</small></div><span class="f">→</span></a>
     </div>
     <h3 class="subrec">Para conocernos</h3>
     <div class="grid">
