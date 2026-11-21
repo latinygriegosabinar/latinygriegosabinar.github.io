@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Latín y Griego · IES Sabinar</title>
-<meta name="description" content="Departamento de Latín y Griego del IES Sabinar (Roquetas de Mar): Latín en 4.º de ESO, Bachillerato de Humanidades y Bachillerato de Humanidades para personas adultas (semipresencial).">
+<title>Latín y Griego · Bachillerato de Humanidades · IES Sabinar (Roquetas de Mar)</title>
+<meta name="description" content="Latín y Griego en el IES Sabinar (Roquetas de Mar): Latín en 4.º de ESO, Bachillerato de Humanidades y Bachillerato semipresencial para personas adultas.">
 <link rel="canonical" href="https://latinygriegosabinar.github.io/">
 <meta name="theme-color" content="#1B1714">
 <link rel="icon" href="favicon.ico" sizes="32x32">
@@ -21,7 +21,10 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Latín y Griego, IES Sabinar: recuadro rojo con marco dorado y el lema &quot;Las palabras tienen historia&quot;">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://latinygriegosabinar.github.io/tarjeta.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HighSchool","name":"IES Sabinar","url":"https://www.ies-sabinar.com/","telephone":"+34950156783","address":{"@type":"PostalAddress","streetAddress":"C/ Pío Baroja, 1","postalCode":"04740","addressLocality":"Roquetas de Mar","addressRegion":"Almería","addressCountry":"ES"},"department":{"@type":"EducationalOrganization","name":"Departamento de Latín y Griego del IES Sabinar","url":"https://latinygriegosabinar.github.io/","description":"Latín en 4.º de ESO, Bachillerato de Humanidades (Latín y Griego) y Bachillerato semipresencial para personas adultas."}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+SC:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -219,8 +222,6 @@ section[id]{scroll-margin-top:90px}
 .salidas .intro{max-width:780px;margin-top:12px}
 .salidas .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:28px}
 .area{background:#FBF6EE;border:1px solid var(--ocre);border-top:4px solid var(--rojo);padding:22px 22px 20px;display:flex;flex-direction:column;gap:8px}
-.area h3{font-size:25px;color:var(--rojo-osc);display:flex;justify-content:space-between;align-items:baseline;gap:10px}
-.area h3 .pond{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--negro);background:var(--ocre);padding:3px 8px;border-radius:2px;white-space:nowrap}
 .area p{font-size:16px}
 .area.otras{background:var(--marfil-2)}
 .aviso-pond{margin-top:18px;font-size:14.5px;color:#5A4A35;max-width:860px}
@@ -238,6 +239,63 @@ section[id]{scroll-margin-top:90px}
 .faq .resp{padding:0 20px 18px;font-size:17px;line-height:1.6}
 .faq .resp p{margin:0 0 10px}
 .faq .resp a{color:var(--rojo);font-weight:600}
+.adultos .enlace-doc{color:#F0C98A}
+.cuadro-in{position:relative}.cuadro-in::before,.cuadro-in::after{position:absolute;font-family:var(--serif);font-size:40px;font-weight:600;line-height:28px;height:28px;padding:0 4px;background:var(--rojo);color:var(--ocre);pointer-events:none}.cuadro-in::before{content:"\03B1";top:-15px;left:-16px}.cuadro-in::after{content:"\03C9";bottom:-13px;right:-15px}
+.lateral.juan .palabra{font-size:30px;line-height:1.15;text-wrap:balance}.lateral.juan .latina{font-style:italic;font-size:26px}.lateral.juan .trad{font-size:16px;color:#F0E2CC;font-style:italic;text-wrap:balance}@media (max-width:860px){.lateral.juan{flex-direction:column;gap:8px}.lateral.juan hr{display:block}}
+h4{font-family:var(--serif);font-weight:600;line-height:1.08;margin:0}
+/* cabecera y portada */
+.cuadro h1{font-size:clamp(42px,5.2vw,68px)}
+.cuadro-in{padding:36px 40px;gap:16px}
+.pared{padding-top:40px}
+nav{gap:4px 16px}
+.cuadro .btn{padding:12px 16px;font-size:15.5px}
+.lateral.juan{order:-1}
+/* foco: rojo sobre fondos claros, claro sobre fondos oscuros */
+a:focus-visible,button:focus-visible,.faq summary:focus-visible{outline-color:var(--rojo)}
+header.top a:focus-visible,.pared a:focus-visible,.adultos a:focus-visible,footer a:focus-visible,.apuntarte a:focus-visible{outline-color:#F0C98A}
+.cuadro a:focus-visible,.p-ocre:focus-visible,.p-rojo:focus-visible,.p-negro:focus-visible{outline-color:#FFF8EC}
+.faq summary::after{content:"+" / ""}
+.faq details[open] summary::after{content:"−" / ""}
+/* rejillas que desbordaban en pantallas muy estrechas */
+.testimonio .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.recursos .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+/* areas de salidas: ahora h4 */
+.area h4{font-size:25px;color:var(--rojo-osc);display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.area h4 .pond{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--negro);background:var(--ocre);padding:3px 8px;border-radius:2px;white-space:nowrap}
+.itin .modalidad{margin-top:14px;max-width:820px;font-size:19px}
+.eso .txt p.familias{border-left:4px solid var(--rojo);padding-left:16px;font-size:16.5px}
+/* cómo apuntarte */
+.apuntarte{background:var(--rojo);color:#F6E7D2;padding:76px 0}
+.apuntarte h2{color:#FFF8EC}
+.apuntarte .eyebrow{color:#F0C98A}
+.apuntarte .intro{font-size:20px;max-width:760px;margin-top:12px}
+.apuntarte .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:18px;margin-top:30px}
+.paso{border:1.5px solid var(--ocre);padding:26px 24px;display:flex;flex-direction:column;gap:8px;background:rgba(27,23,20,.18)}
+.paso .num{font-family:var(--serif);font-size:42px;line-height:1;color:#F0C98A}
+.paso h3{font-size:26px;color:#FFF8EC}
+.paso p{font-size:16.5px}
+.paso b{color:#FFF8EC}
+.apuntarte a{color:#F0C98A;font-weight:600}
+.apuntarte .nota{margin-top:22px;font-size:15.5px;max-width:900px}
+/* recursos con dos versiones */
+.recurso2{display:flex;flex-direction:column;justify-content:center;gap:6px;padding:16px 22px;border:1px solid var(--ocre);color:var(--tinta);font-weight:500;background:#FBF6EE}
+.recurso2 .vers{display:flex;flex-wrap:wrap;gap:4px 20px;font-size:15px;font-weight:600}
+.activ{padding:84px 0 40px}
+.palabra-sem{padding:44px 0 84px}
+a[href^="tel"]{white-space:nowrap}
+footer .legal{flex-basis:100%;font-size:14px;color:#B9AC97;border-top:1px solid rgba(201,146,58,.35);padding-top:16px}
+footer a[href^="tel"],.adultos a[href^="tel"],.adultos .matricula a{color:#F0C98A}
+@media (max-width:860px){
+  header.top .wrap{padding-top:10px;padding-bottom:6px;gap:4px 28px}
+  nav{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;width:100%;gap:0 22px;scrollbar-width:none;-webkit-overflow-scrolling:touch;mask-image:linear-gradient(90deg,#000 88%,transparent)}
+  nav::-webkit-scrollbar{display:none}
+  nav a{flex:0 0 auto;padding:10px 0}
+  nav a:last-child{padding-right:36px}
+  section[id]{scroll-margin-top:110px}
+  .lateral.juan{order:0}
+  .cuadro-in{padding:34px 24px}
+  .pared{padding-top:28px}
+}
 </style>
 </head>
 <body>
@@ -250,10 +308,11 @@ section[id]{scroll-margin-top:90px}
       <a href="#porque">¿Por qué?</a>
       <a href="#eso">4.º de ESO</a>
       <a href="#itinerario">Bachillerato</a>
-      <a href="#adultos">Personas adultas</a>
+      <a href="#apuntarte">Apúntate</a>
+      <a href="#adultos">Adultos</a>
+      <a href="#preguntas">Preguntas</a>
       <a href="#actividades">Actividades</a>
       <a href="#recursos">Recursos</a>
-      <a href="#preguntas">Preguntas</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </div>
@@ -262,13 +321,6 @@ section[id]{scroll-margin-top:90px}
 <main id="contenido">
 <section id="inicio" class="pared">
   <div class="wrap">
-    <div class="lateral juan">
-      <span class="palabra" lang="grc">Ἐν ἀρχῇ ἦν ὁ λόγος</span>
-      <span class="palabra latina" lang="la">In principio erat Verbum</span>
-      <hr>
-      <small class="trad">"En el principio era la Palabra"</small>
-      <small>(Jn 1, 1)</small>
-    </div>
     <div class="cuadro">
       <div class="cuadro-in">
         <p class="eyebrow">Departamento de Latín y Griego</p>
@@ -278,9 +330,16 @@ section[id]{scroll-margin-top:90px}
         <div class="botones">
           <a class="btn btn-ocre" href="#itinerario">Bachillerato de Humanidades</a>
           <a class="btn btn-linea" href="#eso">Latín en 4.º de ESO</a>
-          <a class="btn btn-linea" href="#adultos">Bachillerato de Humanidades para adultos (semipresencial)</a>
+          <a class="btn btn-linea" href="#adultos">Bachillerato para personas adultas (semipresencial)</a>
         </div>
       </div>
+    </div>
+    <div class="lateral juan">
+      <span class="palabra" lang="grc">Ἐν ἀρχῇ ἦν ὁ λόγος</span>
+      <span class="palabra latina" lang="la">In principio erat Verbum</span>
+      <hr>
+      <small class="trad">"En el principio era la Palabra"</small>
+      <small>(Jn 1, 1)</small>
     </div>
     <div class="lateral" aria-hidden="true">
       <span class="palabra">historia</span><small><span lang="grc">ἱστορία</span>, investigación</small>
@@ -297,19 +356,19 @@ section[id]{scroll-margin-top:90px}
     <h2>¿Quién eres?</h2>
     <div class="grid">
       <a class="puerta p-rojo" href="#eso"><div class="puerta-in">
-        <span class="num">I</span>
+        <span class="num" aria-hidden="true">I</span>
         <h3>Estoy en 3.º o 4.º de ESO</h3>
         <p>Descubre Latín en 4.º: palabras, mitos y la vida en Roma.</p>
         <span class="ir">Ver Latín en 4.º →</span>
       </div></a>
       <a class="puerta p-negro" href="#itinerario"><div class="puerta-in">
-        <span class="num">II</span>
+        <span class="num" aria-hidden="true">II</span>
         <h3>Voy a hacer Bachillerato</h3>
         <p>El itinerario de Humanidades, con Latín y Griego en los dos cursos.</p>
         <span class="ir">Ver el itinerario →</span>
       </div></a>
       <a class="puerta p-ocre" href="#adultos"><div class="puerta-in">
-        <span class="num">III</span>
+        <span class="num" aria-hidden="true">III</span>
         <h3>Soy adulto y quiero estudiar</h3>
         <p>Bachillerato por la tarde-noche y semipresencial, compatible con tu vida.</p>
         <span class="ir">Ver personas adultas →</span>
@@ -338,6 +397,7 @@ section[id]{scroll-margin-top:90px}
       <h2>Latín en 4.º de ESO</h2>
       <p class="grande">Tu primer contacto con el latín y la mejor puerta al Bachillerato de Humanidades.</p>
       <p>Una materia para descubrir de dónde vienen las palabras que usas cada día, cómo se vivía en Roma y por qué los mitos clásicos siguen apareciendo en el cine, las series y los videojuegos.</p>
+      <p class="familias"><b>Para las familias:</b> Latín es una materia optativa de 4.º de ESO. Se elige al hacer la matrícula, no exige conocimientos previos y es compatible con cualquier Bachillerato posterior.</p>
       <p><a class="enlace-doc" href="https://www.ies-sabinar.com/uploads/49591-0-6717641506232997776.pdf">Descarga la presentación de Latín en 4.º de ESO (PDF) →</a></p>
     </div>
     <div class="temas">
@@ -359,17 +419,18 @@ section[id]{scroll-margin-top:90px}
   <div class="wrap">
     <p class="eyebrow">Bachillerato</p>
     <h2>El camino de Humanidades</h2>
+    <p class="modalidad">En la matrícula lo encontrarás dentro de la modalidad de <b>Humanidades y Ciencias Sociales</b>: elige el <b>itinerario de Humanidades</b>, el que incluye <b>Latín y Griego</b> en los dos cursos.</p>
     <ol class="camino">
-      <li class="etapa"><div class="hito">I</div><span class="curso">4.º ESO</span><h3>Latín</h3><p>La primera toma de contacto.</p></li>
-      <li class="etapa"><div class="hito">II</div><span class="curso">1.º Bachillerato</span><h3>Latín I y Griego I</h3><p>Lengua, textos y cultura de Grecia y Roma.</p></li>
-      <li class="etapa"><div class="hito">III</div><span class="curso">2.º Bachillerato</span><h3>Latín II y Griego II</h3><p>Traducción de autores clásicos y preparación de la PEvAU.</p></li>
-      <li class="etapa"><div class="hito">IV</div><span class="curso">Universidad</span><h3>Muchas puertas</h3><p>Filologías, Historia, Historia del Arte, Filosofía, Derecho, Periodismo, Magisterio, Traducción, Turismo…</p></li>
+      <li class="etapa"><div class="hito" aria-hidden="true">I</div><span class="curso">4.º ESO</span><h3>Latín</h3><p>La primera toma de contacto.</p></li>
+      <li class="etapa"><div class="hito" aria-hidden="true">II</div><span class="curso">1.º Bachillerato</span><h3>Latín I y Griego I</h3><p>Lengua, textos y cultura de Grecia y Roma.</p></li>
+      <li class="etapa"><div class="hito" aria-hidden="true">III</div><span class="curso">2.º Bachillerato</span><h3>Latín II y Griego II</h3><p>Traducción de autores clásicos y preparación de la PAU (la antigua PEvAU o Selectividad).</p></li>
+      <li class="etapa"><div class="hito" aria-hidden="true">IV</div><span class="curso">Universidad</span><h3>Muchas puertas</h3><p>Filologías, Historia, Historia del Arte, Filosofía, Derecho, Periodismo, Magisterio, Traducción, Turismo…</p></li>
     </ol>
 
     <div class="pevau">
       <div class="dato"><div class="num">+4</div><div class="txt">puntos como máximo en tu nota de admisión a la universidad</div></div>
       <div class="dato"><div class="num">0,2</div><div class="txt">la ponderación máxima de Latín II y Griego II en Magisterio, Periodismo, Traducción, Filologías, Historia o Filosofía</div></div>
-      <div class="dato"><div class="num">8,58 · 8,14</div><div class="txt">medias del IES Sabinar en la PEvAU 2026: Griego II y Latín II</div></div>
+      <div class="dato"><div class="num">8,58 · 8,14</div><div class="txt">medias del IES Sabinar en la PAU de 2026: Griego II y Latín II</div></div>
     </div>
     <p class="nota-pevau"><a class="enlace-doc" href="https://www.ies-sabinar.com/uploads/41336-latin-y-griego-en-la-pevau-ies-sabinar-2026-27.pdf">Consulta los grados en los que ponderan, con la normativa oficial (PDF) →</a></p>
 
@@ -379,56 +440,31 @@ section[id]{scroll-margin-top:90px}
       <p class="intro">Con el Bachillerato de Humanidades y la PAU puedes acceder a cualquier grado universitario. Y Latín II y Griego II te ayudan a subir la nota de admisión en muchísimos de ellos.</p>
       <p class="dest">En las universidades andaluzas, <b>Latín II o Griego II ponderan en todos los grados de Artes y Humanidades y de Ciencias Sociales y Jurídicas</b>: más de 120 grados y dobles grados.</p>
       <div class="grid">
-        <div class="area"><h3>Educación <span class="pond">0,2</span></h3><p>Educación Infantil, Educación Primaria y Educación Social, y sus dobles grados.</p></div>
-        <div class="area"><h3>Lenguas <span class="pond">0,2</span></h3><p>Filología Hispánica, Filología Clásica, Estudios Ingleses, Estudios Franceses, Estudios Árabes e Islámicos, Estudios de Asia Oriental, Lenguas Modernas, Lingüística, Literaturas Comparadas y Traducción e Interpretación.</p></div>
-        <div class="area"><h3>Historia y arte <span class="pond">0,2</span></h3><p>Historia, Historia del Arte, Geografía e Historia, Arqueología, Gestión Cultural, Cine y Cultura, e Historia y Ciencias de la Música.</p></div>
-        <div class="area"><h3>Pensamiento <span class="pond">0,2</span></h3><p>Filosofía, Humanidades, Información y Documentación, y el doble grado de Matemáticas y Filosofía.</p></div>
-        <div class="area"><h3>Comunicación <span class="pond">0,2</span></h3><p>Periodismo, también en sus dobles grados con Comunicación Audiovisual y con Ciencias Políticas.</p></div>
-        <div class="area"><h3>Derecho y más <span class="pond">Latín II 0,2</span></h3><p>Derecho y todos sus dobles grados, Relaciones Internacionales, Publicidad y Relaciones Públicas, Bellas Artes y Conservación y Restauración. Griego II también pondera en todos ellos (0,1, y 0,2 en algunos dobles grados).</p></div>
-        <div class="area otras"><h3>Y también… <span class="pond">0,1</span></h3><p>Administración y Dirección de Empresas, Economía, Finanzas y Contabilidad, Márketing, Turismo, Comunicación Audiovisual, Ciencias Políticas, Sociología, Trabajo Social, Relaciones Laborales, Pedagogía y Criminología, entre otros.</p></div>
+        <div class="area"><h4>Educación <span class="pond">0,2</span></h4><p>Educación Infantil, Educación Primaria y Educación Social, y sus dobles grados.</p></div>
+        <div class="area"><h4>Lenguas <span class="pond">0,2</span></h4><p>Filología Hispánica, Filología Clásica, Estudios Ingleses, Estudios Franceses, Estudios Árabes e Islámicos, Estudios de Asia Oriental, Lenguas Modernas, Lingüística, Literaturas Comparadas y Traducción e Interpretación.</p></div>
+        <div class="area"><h4>Historia y arte <span class="pond">0,2</span></h4><p>Historia, Historia del Arte, Geografía e Historia, Arqueología, Gestión Cultural, Cine y Cultura, e Historia y Ciencias de la Música.</p></div>
+        <div class="area"><h4>Pensamiento <span class="pond">0,2</span></h4><p>Filosofía, Humanidades, Información y Documentación, y el doble grado de Matemáticas y Filosofía.</p></div>
+        <div class="area"><h4>Comunicación <span class="pond">0,2</span></h4><p>Periodismo, también en sus dobles grados con Comunicación Audiovisual y con Ciencias Políticas.</p></div>
+        <div class="area"><h4>Derecho y más <span class="pond">Latín II 0,2</span></h4><p>Derecho y todos sus dobles grados, Relaciones Internacionales, Publicidad y Relaciones Públicas, Bellas Artes y Conservación y Restauración. Griego II también pondera en todos ellos (0,1, y 0,2 en algunos dobles grados).</p></div>
+        <div class="area otras"><h4>Y también… <span class="pond">0,1</span></h4><p>Administración y Dirección de Empresas, Economía, Finanzas y Contabilidad, Marketing e Investigación de Mercados, Turismo, Comunicación Audiovisual, Ciencias Políticas, Sociología, Trabajo Social, Relaciones Laborales, Pedagogía y Criminología, entre otros.</p></div>
       </div>
       <p class="aviso-pond">Fuente: parámetros de ponderación del Distrito Único Universitario de Andalucía para la admisión en el curso 2027-2028 y siguientes: <a href="https://www.juntadeandalucia.es/boja/2025/192/58">Acuerdo de 15 de mayo de 2025</a> (BOJA n.º 192, de 6 de octubre de 2025), con la <a href="https://www.juntadeandalucia.es/boja/2025/207/27">aclaración del BOJA n.º 207</a>, de 28 de octubre de 2025, y <a href="https://www.juntadeandalucia.es/boja/2026/112/47">Acuerdo de 1 de junio de 2026</a> (BOJA n.º 112, de 12 de junio de 2026). Los parámetros pueden revisarse y fuera de Andalucía cada universidad publica los suyos: antes de decidir, consulta la tabla oficial en el <a href="https://lajunta.es/portaldua">portal del Distrito Único Andaluz</a> o pregunta en Orientación.</p>
     </div>
   </div>
 </section>
 
-<section id="adultos" class="adultos">
+<section id="apuntarte" class="apuntarte">
   <div class="wrap">
-    <p class="eyebrow">Bachillerato de Humanidades para personas adultas · Semipresencial</p>
-    <h2>Nunca es tarde para volver a estudiar.<br><span class="tupuedes">Tú puedes.</span></h2>
-    <p class="intro">¿Dejaste los estudios, trabajas o tienes familia a tu cargo? El Bachillerato de Humanidades semipresencial del IES Sabinar está pensado para ti: obtienes el mismo título de Bachiller que en el diurno, con Latín y Griego, sin renunciar a tu vida.</p>
+    <p class="eyebrow">Paso a paso</p>
+    <h2>Cómo apuntarte</h2>
+    <p class="intro">Elegir Latín y Griego es muy sencillo: solo hay que marcarlo en el momento adecuado.</p>
     <div class="grid">
-      <div class="caja"><span class="num">I</span><h3>No vienes todos los días</h3><p>Solo tres tardes a la semana, de 17:00 a 21:00. En 1.º, lunes, martes y jueves; en 2.º, lunes, miércoles y jueves.</p></div>
-      <div class="caja"><span class="num">II</span><h3>El resto, desde casa</h3><p>Las horas a distancia se trabajan en la plataforma Moodle de la Junta de Andalucía, con materiales, tareas y cuestionarios, a tu ritmo.</p></div>
-      <div class="caja"><span class="num">III</span><h3>Te atendemos a distancia</h3><p>Tu profesorado te acompaña por la plataforma y por correo: resuelve tus dudas y sigue tu progreso, con horarios flexibles dentro del calendario de entregas.</p></div>
-      <div class="caja"><span class="num">IV</span><h3>Mismo título, mismas puertas</h3><p>El título de Bachiller tiene la misma validez que en el diurno y te abre la PEvAU, la universidad y los ciclos de grado superior.</p></div>
+      <div class="paso"><span class="num" aria-hidden="true">I</span><h3>Estás en 3.º de ESO</h3><p>Cuando elijas las materias de 4.º, marca <b>Latín</b>. Te lo preguntarán en el instituto antes de acabar el curso y lo confirmarás en la matrícula, del 1 al 10 de julio.</p></div>
+      <div class="paso"><span class="num" aria-hidden="true">II</span><h3>Vas a empezar Bachillerato</h3><p>Elige la modalidad de Humanidades y Ciencias Sociales y, dentro de ella, el itinerario de Humanidades, con <b>Latín I y Griego I</b>. La matrícula es del 1 al 10 de julio.</p></div>
+      <div class="paso"><span class="num" aria-hidden="true">III</span><h3>Vienes de otro centro</h3><p>Solicita plaza en el IES Sabinar <b>del 1 al 31 de marzo</b> y, cuando te admitan, matricúlate del 1 al 10 de julio.</p></div>
+      <div class="paso"><span class="num" aria-hidden="true">IV</span><h3>Eres una persona adulta</h3><p>El Bachillerato semipresencial tiene sus propios plazos y requisitos. Los tienes en el apartado de <a href="#adultos">personas adultas</a>.</p></div>
     </div>
-    <div class="matricula"><h3>Matrícula</h3><p>Del 1 al 10 de julio. Plazo extraordinario desde el 1 de septiembre y, si quedan plazas, hasta marzo. Requisito: título de ESO o de Técnico de FP. Información: 950 156 783 · tic@correo.ies-sabinar.com.</p></div>
-    <p class="cita-adultos"><span class="lat" lang="la">Possunt, quia posse videntur.</span><span class="es">"Pueden, porque creen que pueden." (Virgilio, Eneida V, 231)</span></p>
-    <div class="botones"><a class="btn btn-ocre" href="https://www.ies-sabinar.com/uploads/49961-bachillerato-para-personas-adultas-ies-sabinar-2026-27-2.pdf">Descarga la hoja informativa (PDF)</a><a class="btn btn-linea" href="mailto:marcelolorente@correo.ies-sabinar.com">Escríbenos</a></div>
-  </div>
-</section>
-
-<section class="palabra-sem" aria-label="La palabra de la semana">
-  <div class="wrap">
-    <div class="tablilla"><div class="tablilla-in">
-      <p class="eyebrow">La palabra de la semana</p>
-      <span class="lat" lang="la">Candidatus</span>
-      <span class="es">candidato: "vestido de blanco"</span>
-      <p>En Roma, quienes aspiraban a un cargo público llevaban una toga blanqueada para hacerse notar. De ahí viene nuestro "candidato", y también "cándido".</p>
-    </div></div>
-  </div>
-</section>
-
-<section id="actividades" class="activ">
-  <div class="wrap">
-    <p class="eyebrow">Este curso</p>
-    <h2>Actividades</h2>
-    <div class="grid">
-      <article class="tarjeta"><div class="foto"><img src="taller-papiros.jpg" loading="lazy" decoding="async" alt="Manos de un alumno escribiendo con cálamo sobre una hoja de papiro"></div><div class="cuerpo"><span class="fecha">Primer trimestre</span><h3>Taller de papiros</h3><p>Fabricamos nuestro propio papiro y escribimos sobre él como en la Antigüedad.</p></div></article>
-      <article class="tarjeta"><div class="foto motivo"><span class="g" lang="grc">Ὀδύσσεια</span><small>la Odisea</small></div><div class="cuerpo"><span class="fecha">Diciembre de 2026</span><h3>"La Odisea" en el cine</h3><p>Salida para ver la adaptación del poema de Homero, con trabajo antes y después de la proyección.</p></div></article>
-      <article class="tarjeta"><div class="foto motivo rojo"><span class="g" lang="la">Humanitas</span><small>humanidad, cultura</small></div><div class="cuerpo"><span class="fecha">Segundo trimestre</span><h3>Charlas en 4.º de ESO</h3><p>Con el Departamento de Orientación, presentamos el Bachillerato de Humanidades al alumnado que está a punto de elegir.</p></div></article>
-    </div>
+    <p class="nota">Los trámites se hacen en la secretaría del centro o por internet, en la <a href="https://secretariavirtual.juntadeandalucia.es/secretariavirtual/">Secretaría Virtual de los centros educativos</a> de la Junta de Andalucía. Las fechas son las habituales del procedimiento: confírmalas cada curso en el <a href="https://www.juntadeandalucia.es/educacion/portales/web/escolarizacion">portal de Escolarización</a>. ¿Dudas? Pregunta en Orientación o llama al <a href="tel:+34950156783">950 156 783</a>.</p>
   </div>
 </section>
 
@@ -451,34 +487,20 @@ section[id]{scroll-margin-top:90px}
   </div>
 </section>
 
-<section id="recursos" class="recursos">
+<section id="adultos" class="adultos">
   <div class="wrap">
-    <p class="eyebrow">Para alumnado y familias</p>
-    <h2>Recursos</h2>
-    <p class="intro">Todo el material del departamento está en la biblioteca de recursos de la web del IES Sabinar. Aquí tienes acceso directo a lo más útil.</p>
-    <h3 class="subrec">Para estudiar</h3>
+    <p class="eyebrow">Bachillerato de Humanidades para personas adultas · Semipresencial</p>
+    <h2>Nunca es tarde para volver a estudiar.<br><span class="tupuedes">Tú puedes.</span></h2>
+    <p class="intro">¿Dejaste los estudios, trabajas o tienes familia a tu cargo? El Bachillerato de Humanidades semipresencial del IES Sabinar está pensado para ti: obtienes el mismo título de Bachiller que en el diurno, con Latín y Griego, sin renunciar a tu vida.</p>
     <div class="grid">
-      <a class="recurso" href="https://www.ies-sabinar.com/carpetas/126/preparar-la-pevau-de-latin-ii-y-griego-ii"><div>Preparar la PEvAU<small>Orientaciones oficiales y exámenes de Latín II y Griego II</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/carpetas/127/aprende-latin-y-griego"><div>Aprende latín y griego<small>Fichas, diccionarios y recursos en línea</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/uploads/39007-el-alfabeto-griego-latin-y-griego-ies-sabinar.pdf"><div>El alfabeto griego<small>Ficha 1: las 24 letras y sus palabras</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/uploads/15663-del-latin-al-castellano-latin-y-griego-ies-sabinar.pdf"><div>Del latín al castellano<small>Ficha 2: reglas de evolución fonética</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/uploads/56258-latin-vivo-latin-y-griego-ies-sabinar.pdf"><div>Latín vivo<small>Ficha 3: expresiones latinas de hoy</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/uploads/47325-turaniana-la-roquetas-romana-latin-y-griego-ies-sabinar.pdf"><div>Turaniana: la Roquetas romana<small>Ficha 4: historia, yacimiento y palabras latinas</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/uploads/41336-latin-y-griego-en-la-pevau-ies-sabinar-2026-27.pdf"><div>Latín y Griego en la PEvAU<small>Ponderaciones y nota de admisión</small></div><span class="f">→</span></a>
+      <div class="caja"><span class="num" aria-hidden="true">I</span><h3>No vienes todos los días</h3><p>Solo tres tardes a la semana, de 17:00 a 21:00. En 1.º, lunes, martes y jueves; en 2.º, lunes, miércoles y jueves.</p></div>
+      <div class="caja"><span class="num" aria-hidden="true">II</span><h3>El resto, desde casa</h3><p>Las horas a distancia se trabajan en la plataforma Moodle de la Junta de Andalucía, con materiales, tareas y cuestionarios, a tu ritmo.</p></div>
+      <div class="caja"><span class="num" aria-hidden="true">III</span><h3>Te atendemos a distancia</h3><p>Tu profesorado te acompaña por la plataforma y por correo: resuelve tus dudas y sigue tu progreso, con horarios flexibles dentro del calendario de entregas.</p></div>
+      <div class="caja"><span class="num" aria-hidden="true">IV</span><h3>Mismo título, mismas puertas</h3><p>El título de Bachiller tiene la misma validez que en el diurno y te abre la PAU, la universidad y los ciclos de grado superior.</p></div>
     </div>
-    <h3 class="subrec">Para conocernos</h3>
-    <div class="grid">
-      <a class="recurso" href="https://www.ies-sabinar.com/uploads/99269-0-172785363835926173.pdf"><div>Tríptico del Bachillerato de Humanidades<small>Versión digital, a color</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/uploads/44786-triptico-bachillerato-humanidades-imprimir-ies-sabinar-2026-27.pdf"><div>Tríptico del Bachillerato de Humanidades (para imprimir)<small>Fondo blanco, ideal en blanco y negro</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/uploads/20257-por-que-elegir-humanidades-familias-ies-sabinar-2026-27.pdf"><div>¿Por qué elegir Humanidades?<small>Guía para familias de 3.º y 4.º de ESO</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/uploads/103090-bachillerato-de-humanidades-ies-sabinar-2026-27.pdf"><div>Bachillerato de Humanidades<small>Diurno y nocturno, en imágenes</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/uploads/49591-0-6717641506232997776.pdf"><div>Latín en 4.º de ESO<small>Qué es y qué harás en clase</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/uploads/101250-triptico-latin-4-eso-ies-sabinar-2026-27.pdf"><div>Tríptico de Latín en 4.º de ESO<small>Versión digital, a color</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/uploads/62460-triptico-latin-4-eso-imprimir-ies-sabinar-2026-27.pdf"><div>Tríptico de Latín en 4.º de ESO (para imprimir)<small>Fondo blanco, ideal en blanco y negro</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/uploads/49961-bachillerato-para-personas-adultas-ies-sabinar-2026-27-2.pdf"><div>Bachillerato para personas adultas<small>Horario, requisitos y matrícula</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/departamentos"><div>Programaciones didácticas<small>En la página de Departamentos</small></div><span class="f">→</span></a>
-      <a class="recurso" href="https://www.ies-sabinar.com/recursos/10/latin-y-griego"><div>Biblioteca de recursos<small>Todo el material del departamento</small></div><span class="f">→</span></a>
-    </div>
+    <div class="matricula"><h3>Matrícula</h3><p>Del 1 al 10 de julio. Plazo extraordinario desde el 1 de septiembre y, si quedan plazas, hasta marzo. Requisitos: tener 18 años o cumplirlos en el año en que empieza el curso (también desde los 16 si tienes un contrato de trabajo que te impide asistir al régimen ordinario o eres deportista de alto rendimiento) y el título de ESO o de Técnico de FP. Información: <a href="tel:+34950156783">950 156 783</a> · <a href="mailto:tic@correo.ies-sabinar.com">tic@correo.ies-sabinar.com</a>.</p></div>
+    <p class="cita-adultos"><span class="lat" lang="la">Possunt, quia posse videntur.</span><span class="es">"Pueden, porque creen que pueden." (Virgilio, <span style="font-style:normal">Eneida</span> V, 231)</span></p>
+    <div class="botones"><a class="btn btn-ocre" href="https://www.ies-sabinar.com/uploads/49961-bachillerato-para-personas-adultas-ies-sabinar-2026-27-2.pdf">Descarga la hoja informativa (PDF)</a><a class="btn btn-linea" href="mailto:marcelolorente@correo.ies-sabinar.com">Escríbenos</a></div>
   </div>
 </section>
 
@@ -488,14 +510,65 @@ section[id]{scroll-margin-top:90px}
     <h2>Preguntas frecuentes</h2>
     <div class="lista">
       <details><summary>¿Tengo que haber estudiado Latín en 4.º de ESO para hacer el Bachillerato de Humanidades?</summary><div class="resp"><p>No. En 1.º de Bachillerato, Latín I y Griego I empiezan desde cero. Si has cursado Latín en 4.º, llegas con ventaja, pero no es imprescindible.</p></div></details>
-      <details><summary>¿Es muy difícil?</summary><div class="resp"><p>Exige constancia, como cualquier materia, pero se aprende paso a paso y con mucho acompañamiento. Los resultados lo demuestran: en la PEvAU de 2026, el alumnado del IES Sabinar obtuvo una media de 8,58 en Griego II y de 8,14 en Latín II, entre las más altas del centro.</p></div></details>
+      <details><summary>¿Es muy difícil?</summary><div class="resp"><p>Exige constancia, como cualquier materia, pero se aprende paso a paso y con mucho acompañamiento. Los resultados lo demuestran: en la PAU de 2026, el alumnado del IES Sabinar obtuvo una media de 8,58 en Griego II y de 8,14 en Latín II, entre las más altas del centro.</p></div></details>
       <details><summary>¿Humanidades solo sirve para ser profesor?</summary><div class="resp"><p>No. Lleva a Derecho, Periodismo, Educación, Traducción e Interpretación, Historia, Publicidad, Relaciones Internacionales, edición de contenidos, lingüística computacional, oposiciones… Mira el apartado <a href="#salidas">"¿Qué puedo estudiar después?"</a>.</p></div></details>
       <details><summary>¿Me cierra puertas si luego quiero estudiar otra cosa?</summary><div class="resp"><p>No. Con el Bachillerato y la PAU puedes acceder a cualquier grado universitario. Las ponderaciones solo suman: en algunos grados, Latín II y Griego II te dan puntos extra; en los demás, cuentan las otras materias.</p></div></details>
-      <details><summary>¿Cuántos puntos me pueden dar Latín II y Griego II?</summary><div class="resp"><p>Hasta 4 puntos. La nota de admisión suma a la nota de acceso (hasta 10) las dos materias aprobadas más favorables, multiplicadas por su ponderación (0,1 o 0,2). En Andalucía, Latín II o Griego II ponderan en todos los grados de Artes y Humanidades y de Ciencias Sociales y Jurídicas. Lo tienes todo, con las fuentes oficiales, en la ficha <a href="https://www.ies-sabinar.com/uploads/41336-latin-y-griego-en-la-pevau-ies-sabinar-2026-27.pdf">"Latín y Griego en la PEvAU"</a>.</p></div></details>
-      <details><summary>¿Sirve el latín si voy a estudiar Ciencias?</summary><div class="resp"><p>Sí. Buena parte del vocabulario de la Medicina, la Biología, la Química o el Derecho es de origen grecolatino. Y traducir entrena justo lo que piden todas las carreras: comprender, analizar y expresarse con precisión.</p></div></details>
-      <details><summary>Estudio en otro instituto. ¿Puedo hacer el Bachillerato de Humanidades en el IES Sabinar?</summary><div class="resp"><p>Sí. Puedes pedir plaza en el plazo de admisión, en marzo. Pregunta en el Departamento de Orientación de tu centro o llama al IES Sabinar.</p></div></details>
+      <details><summary>¿Cuántos puntos me pueden dar Latín II y Griego II?</summary><div class="resp"><p>Hasta 4 puntos. La nota de admisión suma a la nota de acceso (hasta 10) las dos materias aprobadas más favorables, multiplicadas por su ponderación (0,1 o 0,2). En Andalucía, Latín II o Griego II ponderan en todos los grados de Artes y Humanidades y de Ciencias Sociales y Jurídicas. Lo tienes todo, con las fuentes oficiales, en la <a href="https://www.ies-sabinar.com/uploads/41336-latin-y-griego-en-la-pevau-ies-sabinar-2026-27.pdf">ficha de ponderaciones y nota de admisión</a>.</p></div></details>
+      <details><summary>¿Sirve el latín si voy a estudiar Ciencias?</summary><div class="resp"><p>Sí. Latín de 4.º de ESO es compatible con cualquier Bachillerato, y buena parte del vocabulario de la Medicina, la Biología o la Química es de origen griego y latino. Además, traducir entrena lo que piden todas las carreras: comprender, analizar y expresarse con precisión.</p></div></details>
+      <details><summary>Estudio en otro instituto. ¿Puedo hacer el Bachillerato de Humanidades en el IES Sabinar?</summary><div class="resp"><p>Sí. Puedes pedir plaza en el plazo de admisión, del 1 al 31 de marzo. Tienes los pasos en <a href="#apuntarte">"Cómo apuntarte"</a>. Si tienes dudas, pregunta en el Departamento de Orientación de tu centro o llama al IES Sabinar.</p></div></details>
       <details><summary>Soy una persona adulta y trabajo. ¿Puedo estudiarlo?</summary><div class="resp"><p>Sí. El IES Sabinar ofrece el Bachillerato de Humanidades para personas adultas en régimen semipresencial: pocas horas de clase por la tarde-noche y el resto en la plataforma Moodle, a tu ritmo y con seguimiento del profesorado. Tienes toda la información en el apartado <a href="#adultos">"Personas adultas"</a>.</p></div></details>
-      <details><summary>¿Dónde puedo preguntar?</summary><div class="resp"><p>En el Departamento de Orientación, en el Departamento de Latín y Griego o llamando al instituto al 950 156 783. Te atenderemos encantados.</p></div></details>
+      <details><summary>¿Dónde puedo preguntar?</summary><div class="resp"><p>En el Departamento de Orientación, en el Departamento de Latín y Griego o llamando al instituto al <a href="tel:+34950156783">950 156 783</a>. Te atenderemos encantados.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section id="actividades" class="activ">
+  <div class="wrap">
+    <p class="eyebrow">Curso 2026-2027</p>
+    <h2>Actividades</h2>
+    <div class="grid">
+      <article class="tarjeta"><div class="foto"><img src="taller-papiros.jpg" loading="lazy" decoding="async" alt="Manos de un alumno escribiendo con cálamo sobre una hoja de papiro"></div><div class="cuerpo"><span class="fecha">Primer trimestre</span><h3>Taller de papiros</h3><p>Fabricamos nuestro propio papiro y escribimos sobre él como en la Antigüedad.</p></div></article>
+      <article class="tarjeta"><div class="foto motivo"><span class="g" lang="grc">Ὀδύσσεια</span><small>la Odisea</small></div><div class="cuerpo"><span class="fecha">Diciembre de 2026</span><h3>"La Odisea" en el cine</h3><p>Salida para ver la adaptación del poema de Homero, con trabajo antes y después de la proyección.</p></div></article>
+      <article class="tarjeta"><div class="foto motivo rojo"><span class="g" lang="la">Humanitas</span><small>humanidad, cultura</small></div><div class="cuerpo"><span class="fecha">Segundo trimestre</span><h3>Charlas en 4.º de ESO</h3><p>Con el Departamento de Orientación, presentamos el Bachillerato de Humanidades al alumnado que está a punto de elegir.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="palabra-sem" aria-label="La palabra de la semana">
+  <div class="wrap">
+    <div class="tablilla"><div class="tablilla-in">
+      <p class="eyebrow">La palabra de la semana</p>
+      <span class="lat" lang="la">Candidatus</span>
+      <span class="es">candidato: "vestido de blanco"</span>
+      <p>En Roma, quienes aspiraban a un cargo público llevaban una toga blanqueada para hacerse notar. De ahí viene nuestro "candidato", y también "cándido".</p>
+    </div></div>
+  </div>
+</section>
+
+<section id="recursos" class="recursos">
+  <div class="wrap">
+    <p class="eyebrow">Para alumnado y familias</p>
+    <h2>Recursos</h2>
+    <p class="intro">Todo el material del departamento está en la biblioteca de recursos de la web del IES Sabinar. Aquí tienes acceso directo a lo más útil.</p>
+    <h3 class="subrec">Para estudiar</h3>
+    <div class="grid">
+      <a class="recurso" href="https://www.ies-sabinar.com/carpetas/126/preparar-la-pevau-de-latin-ii-y-griego-ii"><div>Preparar la PAU<small>Orientaciones oficiales y exámenes de Latín II y Griego II</small></div><span class="f">→</span></a>
+      <a class="recurso" href="https://www.ies-sabinar.com/carpetas/127/aprende-latin-y-griego"><div>Aprende latín y griego<small>Fichas, diccionarios y recursos en línea</small></div><span class="f">→</span></a>
+      <a class="recurso" href="https://www.ies-sabinar.com/uploads/39007-el-alfabeto-griego-latin-y-griego-ies-sabinar.pdf"><div>El alfabeto griego<small>Ficha 1: las 24 letras y sus palabras</small></div><span class="f">→</span></a>
+      <a class="recurso" href="https://www.ies-sabinar.com/uploads/15663-del-latin-al-castellano-latin-y-griego-ies-sabinar.pdf"><div>Del latín al castellano<small>Ficha 2: reglas de evolución fonética</small></div><span class="f">→</span></a>
+      <a class="recurso" href="https://www.ies-sabinar.com/uploads/56258-latin-vivo-latin-y-griego-ies-sabinar.pdf"><div>Latín vivo<small>Ficha 3: expresiones latinas de hoy</small></div><span class="f">→</span></a>
+      <a class="recurso" href="https://www.ies-sabinar.com/uploads/47325-turaniana-la-roquetas-romana-latin-y-griego-ies-sabinar.pdf"><div>Turaniana: la Roquetas romana<small>Ficha 4: historia, yacimiento y palabras latinas</small></div><span class="f">→</span></a>
+    </div>
+    <h3 class="subrec">Para conocernos</h3>
+    <div class="grid">
+      <div class="recurso2"><span>Tríptico del Bachillerato de Humanidades</span><span class="vers"><a href="https://www.ies-sabinar.com/uploads/99269-0-172785363835926173.pdf" aria-label="Tríptico del Bachillerato de Humanidades, versión digital a color">Versión digital, a color →</a><a href="https://www.ies-sabinar.com/uploads/44786-triptico-bachillerato-humanidades-imprimir-ies-sabinar-2026-27.pdf" aria-label="Tríptico del Bachillerato de Humanidades, versión para imprimir">Para imprimir →</a></span></div>
+      <a class="recurso" href="https://www.ies-sabinar.com/uploads/20257-por-que-elegir-humanidades-familias-ies-sabinar-2026-27.pdf"><div>¿Por qué elegir Humanidades?<small>Guía para familias de 3.º y 4.º de ESO</small></div><span class="f">→</span></a>
+      <a class="recurso" href="https://www.ies-sabinar.com/uploads/103090-bachillerato-de-humanidades-ies-sabinar-2026-27.pdf"><div>Bachillerato de Humanidades<small>Diurno y nocturno, en imágenes</small></div><span class="f">→</span></a>
+      <a class="recurso" href="https://www.ies-sabinar.com/uploads/49591-0-6717641506232997776.pdf"><div>Latín en 4.º de ESO<small>Qué es y qué harás en clase</small></div><span class="f">→</span></a>
+      <div class="recurso2"><span>Tríptico de Latín en 4.º de ESO</span><span class="vers"><a href="https://www.ies-sabinar.com/uploads/101250-triptico-latin-4-eso-ies-sabinar-2026-27.pdf" aria-label="Tríptico de Latín en 4.º de ESO, versión digital a color">Versión digital, a color →</a><a href="https://www.ies-sabinar.com/uploads/62460-triptico-latin-4-eso-imprimir-ies-sabinar-2026-27.pdf" aria-label="Tríptico de Latín en 4.º de ESO, versión para imprimir">Para imprimir →</a></span></div>
+      <a class="recurso" href="https://www.ies-sabinar.com/uploads/49961-bachillerato-para-personas-adultas-ies-sabinar-2026-27-2.pdf"><div>Bachillerato para personas adultas<small>Horario, requisitos y matrícula</small></div><span class="f">→</span></a>
+      <a class="recurso" href="https://www.ies-sabinar.com/departamentos"><div>Programaciones didácticas<small>En la página de Departamentos</small></div><span class="f">→</span></a>
+      <a class="recurso" href="https://www.ies-sabinar.com/recursos/10/latin-y-griego"><div>Biblioteca de recursos<small>Todo el material del departamento</small></div><span class="f">→</span></a>
     </div>
   </div>
 </section>
@@ -509,7 +582,7 @@ section[id]{scroll-margin-top:90px}
       <div class="profe"><h3>Marcelo Antonio Lorente Lindes</h3><p>Turno nocturno y semipresencial<br>marcelolorente@correo.ies-sabinar.com</p></div>
     </div>
     <p class="dpto">Departamento de Latín y Griego</p>
-    <p class="contacto-txt">¿Tienes dudas o quieres saber si Humanidades es para ti? Escríbenos directamente a <a href="mailto:marcelolorente@correo.ies-sabinar.com">marcelolorente@correo.ies-sabinar.com</a> o llama al instituto (950 156 783) y pregunta por el Departamento de Latín y Griego. Te atenderemos encantados.</p>
+    <p class="contacto-txt">¿Tienes dudas o quieres saber si Humanidades es para ti? Escríbenos a <a href="mailto:marcelolorente@correo.ies-sabinar.com">marcelolorente@correo.ies-sabinar.com</a> o a <a href="mailto:tic@correo.ies-sabinar.com">tic@correo.ies-sabinar.com</a>, o llama al instituto (<a href="tel:+34950156783">950 156 783</a>) y pregunta por el Departamento de Latín y Griego. Te atenderemos encantados.</p>
   </div>
 </section>
 </main>
@@ -517,14 +590,12 @@ section[id]{scroll-margin-top:90px}
 <div class="greca" aria-hidden="true"></div>
 <footer>
   <div class="wrap">
-    <div><b>IES Sabinar</b><p>C/ Pío Baroja, 1 · 04740 Roquetas de Mar (Almería)<br><a href="https://www.ies-sabinar.com/">www.ies-sabinar.com</a></p></div>
-    <div><b>Contacto</b><p>Teléfono: 950 156 783<br>tic@correo.ies-sabinar.com</p></div>
+    <div><b>IES Sabinar</b><p>C/ Pío Baroja, 1 · 04740 Roquetas de Mar (Almería) · <a href="https://www.google.com/maps/search/?api=1&amp;query=IES+Sabinar+Roquetas+de+Mar">Ver en el mapa</a><br><a href="https://www.ies-sabinar.com/">www.ies-sabinar.com</a></p></div>
+    <div><b>Contacto</b><p>Teléfono: <a href="tel:+34950156783">950 156 783</a><br><a href="mailto:tic@correo.ies-sabinar.com">tic@correo.ies-sabinar.com</a></p></div>
+    <p class="legal">Web del Departamento de Latín y Griego del IES Sabinar. No usa cookies: solo recoge estadísticas de visitas anónimas (GoatCounter). Actualizada en noviembre de 2026.</p>
   </div>
 </footer>
 
-<style>.adultos .enlace-doc{color:#F0C98A}</style>
-<style>.cuadro-in{position:relative}.cuadro-in::before,.cuadro-in::after{position:absolute;font-family:var(--serif);font-size:40px;font-weight:600;line-height:28px;height:28px;padding:0 4px;background:var(--rojo);color:var(--ocre);pointer-events:none}.cuadro-in::before{content:"\03B1";top:-15px;left:-16px}.cuadro-in::after{content:"\03C9";bottom:-13px;right:-15px}</style>
-<style>.lateral.juan .palabra{font-size:30px;line-height:1.15;text-wrap:balance}.lateral.juan .latina{font-style:italic;font-size:26px}.lateral.juan .trad{font-size:16px;color:#F0E2CC;font-style:italic;text-wrap:balance}@media (max-width:860px){.lateral.juan{flex-direction:column;gap:8px}.lateral.juan hr{display:block}}</style>
 <script>
 (function(){var P=[["griego", "Σχολή", "scholḗ", "escuela: \"ocio, tiempo libre\"", "Para los griegos, el tiempo libre era el que se dedicaba a conversar, pensar y aprender. De ahí la escuela: el lugar del ocio bien empleado."], ["latín", "Calculus", "", "cálculo: \"piedrecita\"", "Los romanos contaban con pequeñas piedras sobre un ábaco. Por eso calcular es, en origen, \"mover piedrecitas\"; y por eso los médicos llaman cálculos a las piedras del riñón."], ["latín", "Musculus", "", "músculo: \"ratoncito\"", "Al contraerse bajo la piel, el músculo recordaba a los romanos un ratoncito (mus, muris) que se mueve. Musculus es su diminutivo."], ["griego", "Χάος", "cháos", "caos: \"vacío, abismo\"", "Para Hesíodo, el Caos fue lo primero que existió: un vacío inmenso, antes del orden del mundo. Hoy llamamos caos al desorden total."], ["latín", "Rivalis", "", "rival: \"el del mismo río\"", "Los rivales eran los vecinos que compartían un arroyo (rivus) y se disputaban su agua. De vecinos de orilla pasaron a competidores."], ["griego", "Ἰδιώτης", "idiṓtēs", "idiota: \"particular\"", "En Atenas, el idiṓtēs era quien se ocupaba solo de sus asuntos privados y no participaba en la vida pública. Para los atenienses, eso era casi un defecto."], ["latín", "Trivialis", "", "trivial: \"de la encrucijada\"", "El trivium era el cruce de tres caminos (tres viae), donde la gente se paraba a charlar. Lo trivial era lo que se comentaba en la calle: lo común, sin importancia."], ["griego", "Πανικός", "panikós", "pánico: \"propio del dios Pan\"", "Al dios Pan, mitad hombre y mitad cabra, se le atribuía el terror repentino y sin motivo que se apoderaba de rebaños y ejércitos."], ["latín", "Ambitio", "", "ambición: \"dar vueltas\"", "Ambire era \"ir alrededor\": los candidatos romanos daban vueltas por el foro pidiendo votos. De esa ronda viene nuestra ambición."], ["griego", "Ἄτομος", "átomos", "átomo: \"que no se puede cortar\"", "Demócrito imaginó que la materia estaba formada por partículas indivisibles. Hoy sabemos que el átomo sí se divide, pero conserva su nombre griego."], ["latín", "Candidatus", "", "candidato: \"vestido de blanco\"", "En Roma, quienes aspiraban a un cargo público llevaban una toga blanqueada (candida) para hacerse notar. De ahí viene nuestro \"candidato\", y también \"cándido\"."], ["griego", "Ἐνθουσιασμός", "enthousiasmós", "entusiasmo: \"tener un dios dentro\"", "Éntheos era quien estaba poseído o inspirado por un dios. El entusiasmo es, literalmente, llevar la divinidad dentro."], ["latín", "Persona", "", "persona: \"máscara de teatro\"", "Persona era la máscara que llevaban los actores, y luego el papel que representaban. Con el tiempo pasó a significar cada ser humano."], ["griego", "Κλῖμαξ", "klîmax", "clímax: \"escalera\"", "Los oradores griegos llamaban así a la gradación de ideas que sube peldaño a peldaño. El clímax es el escalón más alto."], ["griego", "Μέντωρ", "Méntōr", "mentor: \"el consejero de Telémaco\"", "En la Odisea, Mentor es el amigo al que Ulises confía su casa, y la diosa Atenea toma su aspecto para aconsejar a Telémaco. Su nombre se hizo común."], ["latín", "Feriae", "", "feria: \"días de fiesta\"", "Las feriae eran los días festivos dedicados a los dioses, en los que no se trabajaba. De ahí las ferias… y las vacaciones de Navidad."], ["latín", "Ianuarius", "", "enero: \"el mes de Jano\"", "Jano, el dios de las puertas y los comienzos, tenía dos caras: una mira al año que se va y otra al que llega."], ["latín", "Salarium", "", "salario: \"relacionado con la sal\"", "El salario tiene que ver con la sal (sal, salis), un bien muy valioso en la Antigüedad. Su origen exacto se discute: quizá era el dinero para comprarla."], ["griego", "Μουσεῖον", "mouseîon", "museo: \"lugar de las Musas\"", "El Museo de Alejandría era un centro de estudio consagrado a las Musas, diosas de las artes y las ciencias, con una biblioteca famosa en todo el mundo."], ["latín", "Nausea", "", "náusea: \"mareo en barco\"", "Los romanos tomaron la palabra del griego nausía, derivada de naûs, \"nave\". La náusea era, en origen, el mareo de los marineros."], ["griego", "Ὑποκριτής", "hypokritḗs", "hipócrita: \"actor\"", "En el teatro griego, el hypokritḗs era el actor que interpretaba un papel. Hipócrita es quien finge lo que no es."], ["latín", "Februarius", "", "febrero: \"el mes de las purificaciones\"", "En febrero se celebraban las februa, ritos de purificación. Era el último mes del primitivo calendario romano, que empezaba en marzo."], ["latín", "Sinister", "", "siniestro: \"izquierdo\"", "Para los romanos, el lado izquierdo se asociaba a menudo con el mal agüero. Por eso lo siniestro acabó siendo lo funesto."], ["griego", "Ἐγκυκλοπαιδεία", "enkyklopaideía", "enciclopedia: \"educación en círculo\"", "Era la formación completa, la que recorría en círculo todos los saberes. Los ilustrados franceses del siglo XVIII pusieron este nombre a su gran obra."], ["griego", "Δίαιτα", "díaita", "dieta: \"modo de vida\"", "Para los médicos griegos, la díaita no era solo lo que se comía, sino toda la forma de vivir: alimentación, ejercicio y descanso."], ["latín", "Senatus", "", "senado: \"consejo de ancianos\"", "El senado romano era el consejo de los senes, los ancianos, por su experiencia. De la misma raíz viene \"senil\"."], ["griego", "Τύραννος", "týrannos", "tirano: \"señor absoluto\"", "En Grecia, el tirano era quien tomaba el poder sin derecho a él, aunque gobernara bien. Con el tiempo, la palabra se cargó de crueldad."], ["griego", "Κομήτης", "komḗtēs", "cometa: \"cabelludo\"", "Los griegos llamaban a estos astros \"estrellas con cabellera\" (kómē) por su larga cola luminosa."], ["latín", "Companio", "", "compañero: \"el que comparte el pan\"", "La palabra se formó en latín tardío con cum, \"con\", y panis, \"pan\": compañero es, literalmente, aquel con quien compartes el pan."], ["griego", "Ἀκαδημία", "Akadēmía", "academia: \"el jardín de Academo\"", "Platón enseñaba en un jardín de Atenas consagrado al héroe Academo. Su escuela tomó el nombre del lugar, y hoy lo llevan todas las academias."], ["latín", "Petroleum", "", "petróleo: \"aceite de piedra\"", "La palabra se formó en el latín medieval con petra, \"piedra\", y oleum, \"aceite\": el aceite que brota de la roca."], ["griego", "Σαρκασμός", "sarkasmós", "sarcasmo: \"desgarrar la carne\"", "El verbo sarkázō significaba arrancar la carne a mordiscos. El sarcasmo es la burla que muerde."], ["griego", "Βιβλιοθήκη", "bibliothḗkē", "biblioteca: \"depósito de libros\"", "De biblíon, \"libro\", y thḗkē, \"caja, depósito\". Esta semana se celebra el Día del Libro: buen momento para visitar una."], ["griego", "Ὀλυμπιάς", "Olympiás", "olimpiada: \"cuatro años\"", "Para los griegos, la olimpiada no era la competición, sino el periodo de cuatro años entre unos Juegos y otros. Así medían el tiempo."], ["latín", "Examen", "", "examen: \"la aguja de la balanza\"", "El examen era el fiel de la balanza, el que indica si los platillos están equilibrados. Examinar es, en origen, pesar con cuidado."], ["latín", "Dies Lunae", "", "lunes: \"el día de la Luna\"", "Los días de la semana tienen nombre de astros y dioses romanos: lunes (Luna), martes (Marte), miércoles (Mercurio), jueves (Júpiter) y viernes (Venus)."], ["latín", "Laurus", "", "laureado: \"coronado de laurel\"", "El laurel, árbol de Apolo, coronaba a los vencedores y a los poetas. Por eso decimos que alguien se duerme en los laureles."], ["griego", "Πρόβλημα", "próblēma", "problema: \"lo que se pone delante\"", "Del verbo probállō, \"lanzar hacia delante\": un problema es un obstáculo que se interpone en el camino… y que hay que resolver."], ["griego", "Ἀγών", "agṓn", "agonía: \"competición, lucha\"", "El agṓn era la competición atlética o el debate. La agonía es la lucha, sobre todo la última. Ánimo a quienes se presentan esta semana a la PAU."], ["latín", "Vacatio", "", "vacaciones: \"estar libre\"", "Vacare significaba estar vacío, libre de ocupaciones. Las vacaciones son el tiempo en que uno queda libre de obligaciones."], ["latín", "Gratia", "", "gracias: \"favor, agradecimiento\"", "Gratia era el favor que se hace y el agradecimiento que se devuelve. Al terminar el curso: gratias vobis, \"gracias a vosotros\"."], ["latín", "Canicula", "", "canícula: \"perrita\"", "Canicula era el nombre de Sirio, la estrella de la constelación del Can Mayor. Sale con el Sol en los días más calurosos del verano."], ["latín", "Peregrinus", "", "peregrino: \"el que viene de fuera\"", "Peregrinus era quien venía de más allá de los campos (per agros): el extranjero, el viajero. Buen verano y buen viaje."]];
 var i=Math.floor((Date.now()-Date.UTC(2026,8,6,22))/6048e5);if(i<0)i=0;var p=P[i%P.length];
