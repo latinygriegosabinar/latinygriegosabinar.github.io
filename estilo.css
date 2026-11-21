@@ -228,6 +228,8 @@ section[id]{scroll-margin-top:90px}
 .faq .resp{padding:0 20px 18px;font-size:17px;line-height:1.6}
 .faq .resp p{margin:0 0 10px}
 .faq .resp a{color:var(--rojo);font-weight:600}
+.faq .resp ul{margin:0 0 10px;padding-left:22px}
+.faq .resp li{margin:0 0 8px}
 .adultos .enlace-doc{color:#F0C98A}
 .cuadro-in{position:relative}.cuadro-in::before,.cuadro-in::after{position:absolute;font-family:var(--serif);font-size:40px;font-weight:600;line-height:28px;height:28px;padding:0 4px;background:var(--rojo);color:var(--ocre);pointer-events:none}.cuadro-in::before{content:"\03B1";top:-15px;left:-16px}.cuadro-in::after{content:"\03C9";bottom:-13px;right:-15px}
 .lateral.juan .palabra{font-size:30px;line-height:1.15;text-wrap:balance}.lateral.juan .latina{font-style:italic;font-size:26px}.lateral.juan .trad{font-size:16px;color:#F0E2CC;font-style:italic;text-wrap:balance}@media (max-width:860px){.lateral.juan{flex-direction:column;gap:8px}.lateral.juan hr{display:block}}
