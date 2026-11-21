@@ -287,6 +287,12 @@ a[href^="tel"]{white-space:nowrap}
 .aula-fotos figure{margin:0;background:#FBF6EE;border:1px solid var(--marfil-2)}
 .aula-fotos img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-bottom:4px solid var(--rojo)}
 .aula-fotos figcaption{padding:12px 18px 14px;font-size:15.5px;color:#5A4A35}
+.galeria-tit{font-size:30px;color:var(--rojo-osc);margin-top:44px}
+.galeria{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:16px;margin-top:18px}
+.g-item{display:block;background:#FBF6EE;border:1px solid var(--marfil-2);text-decoration:none;color:#5A4A35}
+.g-item img{width:100%;aspect-ratio:1/1;object-fit:cover;border-bottom:3px solid var(--rojo)}
+.g-item span{display:block;padding:10px 14px 12px;font-size:14.5px;line-height:1.4}
+.g-item:hover span{color:var(--rojo-osc)}
 footer .legal{flex-basis:100%;font-size:14px;color:#B9AC97;border-top:1px solid rgba(201,146,58,.35);padding-top:16px}
 footer a[href^="tel"],.adultos a[href^="tel"],.adultos .matricula a{color:#F0C98A}
 @media (max-width:860px){
@@ -538,6 +544,13 @@ footer a[href^="tel"],.adultos a[href^="tel"],.adultos .matricula a{color:#F0C98
       <article class="tarjeta"><div class="foto"><img src="taller-papiros.jpg" loading="lazy" decoding="async" alt="Hojas de papiro escritas por el alumnado con textos latinos y griegos"></div><div class="cuerpo"><span class="fecha">Primer trimestre</span><h3>Taller de papiros</h3><p>Escribimos sobre papiro, como en la Antigüedad, versos de Homero, Virgilio y Horacio.</p></div></article>
       <article class="tarjeta"><div class="foto motivo"><span class="g" lang="grc">Ὀδύσσεια</span><small>la Odisea</small></div><div class="cuerpo"><span class="fecha">Diciembre de 2026</span><h3>"La Odisea" en el cine</h3><p>Salida para ver la adaptación del poema de Homero, con trabajo antes y después de la proyección.</p></div></article>
       <article class="tarjeta"><div class="foto motivo rojo"><span class="g" lang="la">Humanitas</span><small>humanidad, cultura</small></div><div class="cuerpo"><span class="fecha">Segundo trimestre</span><h3>Charlas en 4.º de ESO</h3><p>Con el Departamento de Orientación, presentamos el Bachillerato de Humanidades al alumnado que está a punto de elegir.</p></div></article>
+    </div>
+    <h3 class="galeria-tit">Galería del aula</h3>
+    <div class="galeria">
+      <a class="g-item" href="galeria-papiros-mesa.jpg"><img src="galeria-papiros-mesa-700.jpg" srcset="galeria-papiros-mesa-700.jpg 700w, galeria-papiros-mesa.jpg 1400w" sizes="(max-width:620px) 100vw, (max-width:1100px) 50vw, 280px" loading="lazy" decoding="async" alt="Papiros del alumnado sobre una mesa, con versos de Horacio, Ovidio y Virgilio en latín"><span>Horacio, Ovidio y Virgilio, en papiro</span></a>
+      <a class="g-item" href="galeria-papiros-traducciones.jpg"><img src="galeria-papiros-traducciones-700.jpg" srcset="galeria-papiros-traducciones-700.jpg 700w, galeria-papiros-traducciones.jpg 1400w" sizes="(max-width:620px) 100vw, (max-width:1100px) 50vw, 280px" loading="lazy" decoding="async" alt="Papiros en la pared con versos griegos y latinos y su traducción al castellano"><span>Del griego al castellano: traducimos lo que escribimos</span></a>
+      <a class="g-item" href="galeria-alfabeto-papiros.jpg"><img src="galeria-alfabeto-papiros-700.jpg" srcset="galeria-alfabeto-papiros-700.jpg 700w, galeria-alfabeto-papiros.jpg 1400w" sizes="(max-width:620px) 100vw, (max-width:1100px) 50vw, 280px" loading="lazy" decoding="async" alt="Letras griegas recortadas en rojo, dorado y plata sobre una fila de papiros"><span>El alfabeto griego, en mayúsculas y minúsculas</span></a>
+      <a class="g-item" href="galeria-alfabeto.jpg"><img src="galeria-alfabeto-700.jpg" srcset="galeria-alfabeto-700.jpg 700w, galeria-alfabeto.jpg 1400w" sizes="(max-width:620px) 100vw, (max-width:1100px) 50vw, 280px" loading="lazy" decoding="async" alt="El alfabeto griego completo en la pared del aula, en letras rojas, doradas y plateadas"><span>Nuestra pared: de la alfa a la omega</span></a>
     </div>
   </div>
 </section>
