@@ -363,6 +363,26 @@ footer a[href^="tel"],.adultos a[href^="tel"],.adultos .matricula a{color:#F0C98
 .juego .sig{background:var(--ocre);color:var(--negro);font-weight:600;border-color:var(--ocre);margin-top:14px}
 .juego .final{font-family:var(--serif);font-size:30px;color:#FFF8EC;margin:10px 0 6px}
 @media (max-width:620px){.juego .caja{padding:26px 20px}.juego .pal{font-size:42px}.juego h2{font-size:32px}}
+
+.calc{margin-top:56px;background:var(--negro);color:#F6E7D2;border:1.5px solid var(--ocre);padding:32px 30px}
+.calc h3{font-size:34px;color:#FFF8EC}
+.calc .intro{margin:8px 0 22px;max-width:760px;font-size:17.5px;color:#EAD9BC}
+.calc .campos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:18px 22px}
+.calc label{display:flex;flex-direction:column;gap:6px;font-size:15.5px;font-weight:500;color:#F0C98A}
+.calc .fila{display:flex;gap:8px}
+.calc input,.calc select{font-family:var(--sans);font-size:20px;padding:10px 12px;background:#FBF6EE;color:var(--negro);border:1.5px solid var(--ocre);border-radius:0;width:100%;min-width:0}
+.calc select{width:auto;flex:none;font-size:17px}
+.calc input:focus-visible,.calc select:focus-visible{outline:3px solid #FFF8EC;outline-offset:2px}
+.calc .res{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:18px 22px;margin-top:26px;border-top:1px solid var(--ocre);padding-top:22px}
+.calc .res div{display:flex;flex-direction:column;gap:2px}
+.calc .res span{font-size:15.5px;color:#EAD9BC}
+.calc .campos{align-items:end}
+.calc .res b{font-variant-numeric:lining-nums;font-family:var(--serif);font-size:46px;line-height:1.05;color:#FFF8EC;font-weight:700}
+.calc .res .adm b{color:#F0C98A;font-size:58px}
+.calc .msg{margin:14px 0 0;font-size:16.5px;min-height:1.6em}
+.calc .nota{margin:16px 0 0;font-size:14.5px;color:#D9C7A8;max-width:900px}
+.calc .nota a{color:#F0C98A}
+@media (max-width:620px){.calc{padding:26px 20px}.calc h3{font-size:29px}}
 </style>
 </head>
 <body>
@@ -549,8 +569,40 @@ bs.forEach(function(b,i){b.addEventListener('click',function(){bs.forEach(functi
       </div>
       <p class="aviso-pond">Fuente: parámetros de ponderación del Distrito Único Universitario de Andalucía para la admisión en el curso 2027-2028 y siguientes: <a href="https://www.juntadeandalucia.es/boja/2025/192/58">Acuerdo de 15 de mayo de 2025</a> (BOJA n.º 192, de 6 de octubre de 2025), con la <a href="https://www.juntadeandalucia.es/boja/2025/207/27">aclaración del BOJA n.º 207</a>, de 28 de octubre de 2025, y <a href="https://www.juntadeandalucia.es/boja/2026/112/47">Acuerdo de 1 de junio de 2026</a> (BOJA n.º 112, de 12 de junio de 2026). Los parámetros pueden revisarse y fuera de Andalucía cada universidad publica los suyos: antes de decidir, consulta la tabla oficial en el <a href="https://lajunta.es/portaldua">portal del Distrito Único Andaluz</a> o pregunta en Orientación.</p>
     </div>
+    <div class="calc" id="calculadora">
+      <h3>Calcula tu nota de admisión</h3>
+      <p class="intro">Escribe tus notas (o las que esperas sacar) y mira cuánto suben Latín II y Griego II. Puedes cambiar la ponderación según el grado que te interese.</p>
+      <div class="campos">
+        <label>Nota media de Bachillerato<input id="c-nmb" type="text" inputmode="decimal" value="7,5" autocomplete="off"></label>
+        <label>Nota de la fase de acceso de la PAU<input id="c-fa" type="text" inputmode="decimal" value="7" autocomplete="off"></label>
+        <label>Latín II en la PAU y su ponderación<span class="fila"><input id="c-lat" type="text" inputmode="decimal" value="8" autocomplete="off" aria-label="Nota de Latín II"><select id="c-plat" aria-label="Ponderación de Latín II"><option value="0.2">× 0,2</option><option value="0.1">× 0,1</option></select></span></label>
+        <label>Griego II en la PAU y su ponderación<span class="fila"><input id="c-gri" type="text" inputmode="decimal" value="8,5" autocomplete="off" aria-label="Nota de Griego II"><select id="c-pgri" aria-label="Ponderación de Griego II"><option value="0.2">× 0,2</option><option value="0.1">× 0,1</option></select></span></label>
+      </div>
+      <div class="res" aria-live="polite">
+        <div><span>Nota de acceso (sobre 10)</span><b id="c-acc">–</b></div>
+        <div><span>Lo que suman Latín II y Griego II</span><b id="c-sum">–</b></div>
+        <div class="adm"><span>Nota de admisión (sobre 14)</span><b id="c-adm">–</b></div>
+      </div>
+      <p class="msg" id="c-msg" aria-live="polite"></p>
+      <p class="nota">Cálculo orientativo. Nota de acceso = 0,6 × nota media de Bachillerato + 0,4 × fase de acceso (hace falta al menos un 4 en la fase de acceso y un 5 de nota de acceso). A ella se suman las dos materias más favorables, aprobadas con 5 o más, multiplicadas por su ponderación: aquí se cuentan solo Latín II y Griego II. La ponderación de cada grado está en la <a href="https://www.ies-sabinar.com/uploads/41336-latin-y-griego-en-la-pevau-ies-sabinar-2026-27.pdf">ficha de ponderaciones</a> y en el <a href="https://lajunta.es/portaldua">portal del Distrito Único Andaluz</a>.</p>
+    </div>
   </div>
 </section>
+<script>
+(function(){var $=function(x){return document.getElementById(x)};
+function n(id){var v=parseFloat(String($(id).value).replace(',','.'));return isNaN(v)?null:v}
+function f(x,d){return x.toFixed(d).replace('.',',')}
+function calc(){var a=n('c-nmb'),b=n('c-fa'),l=n('c-lat'),g=n('c-gri'),m=$('c-msg');
+if(a===null||b===null||a<0||a>10||b<0||b>10||(l!==null&&(l<0||l>10))||(g!==null&&(g<0||g>10))){$('c-acc').textContent=$('c-sum').textContent=$('c-adm').textContent='–';m.textContent='Escribe notas entre 0 y 10.';return}
+var acc=0.6*a+0.4*b,sl=l!==null&&l>=5?l*parseFloat($('c-plat').value):0,sg=g!==null&&g>=5?g*parseFloat($('c-pgri').value):0,sum=sl+sg;
+$('c-acc').textContent=f(acc,3);$('c-sum').textContent='+ '+f(sum,3);
+if(b<4||acc<5){$('c-adm').textContent='–';m.textContent=b<4?'Con menos de un 4 en la fase de acceso no se supera la prueba.':'La nota de acceso tiene que llegar a 5.';return}
+$('c-adm').textContent=f(acc+sum,3);
+var t=[];if(l!==null&&l<5)t.push('Latín II');if(g!==null&&g<5)t.push('Griego II');
+m.textContent=t.length?t.join(' y ')+(t.length>1?' no suman':' no suma')+': solo ponderan las materias aprobadas con 5 o más.':''}
+['c-nmb','c-fa','c-lat','c-gri','c-plat','c-pgri'].forEach(function(id){$(id).addEventListener('input',calc);$(id).addEventListener('change',calc)});calc()})();
+</script>
+
 
 <section id="apuntarte" class="apuntarte">
   <div class="wrap">
