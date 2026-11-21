@@ -298,7 +298,7 @@ header.top a:focus-visible,.pared a:focus-visible,.adultos a:focus-visible,foote
 .recurso2{display:flex;flex-direction:column;justify-content:center;gap:6px;padding:16px 22px;border:1px solid var(--ocre);color:var(--tinta);font-weight:500;background:#FBF6EE}
 .recurso2 .vers{display:flex;flex-wrap:wrap;gap:4px 20px;font-size:15px;font-weight:600}
 .activ{padding:84px 0 40px}
-.palabra-sem{padding:44px 0 84px}
+.palabra-sem{padding:44px 0 56px}
 a[href^="tel"]{white-space:nowrap}
 .aula-fotos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:22px;margin-top:30px}
 .aula-fotos figure{margin:0;background:#FBF6EE;border:1px solid var(--marfil-2)}
@@ -343,6 +343,26 @@ footer a[href^="tel"],.adultos a[href^="tel"],.adultos .matricula a{color:#F0C98
 .frase .pista{min-height:3.4em;margin:20px 0 0;font-size:18px}
 .frase .pista b{color:#FFF8EC}
 .frase .solucion{margin:14px 0 0;font-family:var(--serif);font-style:italic;font-size:24px;color:#F0C98A}
+
+.juego{padding:0 0 84px}
+.juego .caja{background:var(--rojo);color:#F6E7D2;border:1.5px solid var(--ocre);outline:6px solid var(--rojo);padding:34px 30px;max-width:860px;margin:0 auto}
+.juego .eyebrow{color:#F0C98A}
+.juego h2{color:#FFF8EC;font-size:38px}
+.juego .cont{font-family:var(--sc);letter-spacing:.14em;font-size:16px;color:#F0C98A;margin:18px 0 4px}
+.juego .preg{font-size:19px;margin:0}
+.juego .pal{font-family:var(--serif);font-weight:700;font-size:54px;line-height:1.05;color:#FFF8EC;margin:4px 0 18px}
+.juego .ops{display:grid;gap:10px}
+.juego .ops button,.juego .sig{font-family:var(--sans);font-size:18px;text-align:left;padding:14px 18px;background:rgba(27,23,20,.22);color:#FFF8EC;border:1.5px solid var(--ocre);cursor:pointer}
+.juego .ops button:hover:not(:disabled){background:rgba(27,23,20,.45)}
+.juego .ops button:disabled{cursor:default;opacity:.75}
+.juego .ops button.bien{background:#F4EBDC;color:var(--negro);opacity:1;font-weight:600}
+.juego .ops button.mal{background:var(--negro);opacity:1;text-decoration:line-through}
+.juego button:focus-visible{outline:3px solid #FFF8EC;outline-offset:3px}
+.juego .exp{min-height:4.6em;margin:18px 0 0;font-size:17.5px}
+.juego .exp b{color:#FFF8EC}
+.juego .sig{background:var(--ocre);color:var(--negro);font-weight:600;border-color:var(--ocre);margin-top:14px}
+.juego .final{font-family:var(--serif);font-size:30px;color:#FFF8EC;margin:10px 0 6px}
+@media (max-width:620px){.juego .caja{padding:26px 20px}.juego .pal{font-size:42px}.juego h2{font-size:32px}}
 </style>
 </head>
 <body>
@@ -634,6 +654,55 @@ bs.forEach(function(b,i){b.addEventListener('click',function(){bs.forEach(functi
     </div></div>
   </div>
 </section>
+
+<section id="juego" class="juego">
+  <div class="wrap">
+    <div class="caja">
+      <p class="eyebrow">Un juego</p>
+      <h2>¿De dónde viene esta palabra?</h2>
+      <div id="j-zona">
+        <p class="cont" id="j-cont"></p>
+        <p class="preg">¿Qué significaba en su origen?</p>
+        <p class="pal" id="j-pal"></p>
+        <div class="ops" id="j-ops"></div>
+        <p class="exp" id="j-exp" aria-live="polite"></p>
+        <button type="button" class="sig" id="j-sig" hidden>Siguiente palabra →</button>
+      </div>
+      <noscript><p>Este juego necesita JavaScript.</p></noscript>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+var P=[
+["músculo","ratoncito",["fuerza","cuerda tensa"],"Del latín <i lang=\"la\">musculus</i>, diminutivo de <i lang=\"la\">mus</i>, \"ratón\": al moverse bajo la piel, a los romanos les recordaba un ratoncillo."],
+["salario","pago en sal",["trabajo del día","moneda de plata"],"Del latín <i lang=\"la\">salarium</i>, de <i lang=\"la\">sal</i>: la paga que recibían los soldados para comprar sal."],
+["candidato","vestido de blanco",["el que promete","elegido por el pueblo"],"Del latín <i lang=\"la\">candidatus</i>: quien aspiraba a un cargo llevaba la toga blanqueada. También viene de ahí \"cándido\"."],
+["alumno","el que es alimentado",["el que no tiene luz","el que escucha"],"Del latín <i lang=\"la\">alumnus</i>, del verbo <i lang=\"la\">alere</i>, \"alimentar, criar\". Lo de \"sin luz\" es una leyenda muy repetida, pero falsa."],
+["escuela","tiempo libre",["casa de niños","lugar de silencio"],"Del griego <span lang=\"grc\">σχολή</span> (<i>scholé</i>), \"ocio\": el tiempo que queda libre para aprender."],
+["cementerio","dormitorio",["tierra sagrada","lugar de piedra"],"Del griego <span lang=\"grc\">κοιμητήριον</span> (<i>koimetérion</i>), \"lugar para dormir\"."],
+["hipopótamo","caballo de río",["cerdo gigante","bestia del barro"],"Del griego <span lang=\"grc\">ἵππος</span>, \"caballo\", y <span lang=\"grc\">ποταμός</span>, \"río\". Como en \"hipódromo\" y \"Mesopotamia\"."],
+["pupila","niñita",["agujero pequeño","espejo"],"Del latín <i lang=\"la\">pupilla</i>, \"niña pequeña, muñequita\": la figurita que ves reflejada en el ojo de quien te mira. Por eso también se llama \"la niña del ojo\"."],
+["cálculo","piedrecita",["cuenta con los dedos","número exacto"],"Del latín <i lang=\"la\">calculus</i>, \"guijarro\": los romanos contaban con piedrecitas. Por eso también se llaman cálculos las piedras del riñón."],
+["virus","veneno",["vida diminuta","fuerza"],"Del latín <i lang=\"la\">virus</i>, \"veneno, jugo dañino\"."],
+["compañero","el que comparte el pan",["el que camina al lado","el que lucha contigo"],"Del latín <i lang=\"la\">cum</i>, \"con\", y <i lang=\"la\">panis</i>, \"pan\": compañeros son los que comen del mismo pan."],
+["planeta","errante",["esfera","hijo del sol"],"Del griego <span lang=\"grc\">πλανήτης</span> (<i>planétes</i>), \"vagabundo\": los astros que se mueven entre las estrellas fijas."],
+["democracia","poder del pueblo",["ley de todos","ciudad libre"],"Del griego <span lang=\"grc\">δῆμος</span>, \"pueblo\", y <span lang=\"grc\">κράτος</span>, \"poder\"."],
+["dinosaurio","lagarto terrible",["dragón antiguo","hueso gigante"],"Del griego <span lang=\"grc\">δεινός</span>, \"terrible\", y <span lang=\"grc\">σαῦρος</span>, \"lagarto\". La palabra se inventó en el siglo XIX con raíces griegas."]
+];
+var N=6,ronda,i,ac;
+function mez(a){a=a.slice();for(var k=a.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1)),t=a[k];a[k]=a[j];a[j]=t}return a}
+var $=function(x){return document.getElementById(x)},zona=$('j-zona'),plant=zona.innerHTML;
+function empezar(){zona.innerHTML=plant;ronda=mez(P).slice(0,N);i=0;ac=0;$('j-sig').addEventListener('click',function(){i++;i<N?pinta():fin()});pinta()}
+function pinta(){var q=ronda[i];$('j-cont').textContent='Palabra '+(i+1)+' de '+N;$('j-pal').textContent=q[0];$('j-exp').innerHTML='';$('j-sig').hidden=true;var o=$('j-ops');o.innerHTML='';
+mez([q[1]].concat(q[2])).forEach(function(t){var b=document.createElement('button');b.type='button';b.textContent=t.charAt(0).toUpperCase()+t.slice(1);b.addEventListener('click',function(){var ok=t===q[1];if(ok)ac++;
+[].forEach.call(o.children,function(x){x.disabled=true;if(x.textContent.toLowerCase()===q[1])x.className='bien'});if(!ok)b.className='mal';
+$('j-exp').innerHTML='<b>'+(ok?'¡Correcto! ':'Casi. ')+'</b>'+q[3];var s=$('j-sig');s.textContent=i<N-1?'Siguiente palabra →':'Ver resultado →';s.hidden=false;s.focus()});o.appendChild(b)})}
+function fin(){var m=ac===N?'¡Optime! Tienes madera de filólogo.':ac>=N-2?'¡Muy bien! Ya hablas latín y griego sin saberlo.':'Las palabras guardan sorpresas. Prueba otra vez: salen palabras distintas.';
+zona.innerHTML='<p class="final" tabindex="-1" id="j-fin">Has acertado '+ac+' de '+N+'.</p><p class="preg">'+m+'</p><button type="button" class="sig" id="j-otra">Jugar otra vez</button>';$('j-otra').addEventListener('click',empezar);$('j-fin').focus()}
+empezar();
+})();
+</script>
 
 <section id="recursos" class="recursos">
   <div class="wrap">
