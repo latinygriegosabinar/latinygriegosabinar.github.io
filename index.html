@@ -344,7 +344,7 @@ footer a[href^="tel"],.adultos a[href^="tel"],.adultos .matricula a{color:#F0C98
 .frase .pista b{color:#FFF8EC}
 .frase .solucion{margin:14px 0 0;font-family:var(--serif);font-style:italic;font-size:24px;color:#F0C98A}
 
-.juego{padding:0 0 84px}
+.juego{padding:0 0 40px}
 .juego .caja{background:var(--rojo);color:#F6E7D2;border:1.5px solid var(--ocre);outline:6px solid var(--rojo);padding:34px 30px;max-width:860px;margin:0 auto}
 .juego .eyebrow{color:#F0C98A}
 .juego h2{color:#FFF8EC;font-size:38px}
@@ -383,6 +383,21 @@ footer a[href^="tel"],.adultos a[href^="tel"],.adultos .matricula a{color:#F0C98
 .calc .nota{margin:16px 0 0;font-size:14.5px;color:#D9C7A8;max-width:900px}
 .calc .nota a{color:#F0C98A}
 @media (max-width:620px){.calc{padding:26px 20px}.calc h3{font-size:29px}}
+
+.nombre{padding:0 0 84px}
+.nombre .caja{background:var(--negro);color:#F6E7D2;border:1.5px solid var(--ocre);padding:34px 30px;max-width:860px;margin:0 auto}
+.nombre .eyebrow{color:#F0C98A}
+.nombre h2{color:#FFF8EC;font-size:38px}
+.nombre .intro{margin:8px 0 18px;font-size:17.5px;color:#EAD9BC}
+.nombre label{display:block;font-size:15.5px;font-weight:500;color:#F0C98A;margin-bottom:6px}
+.nombre input{font-family:var(--sans);font-size:22px;padding:11px 14px;background:#FBF6EE;color:var(--negro);border:1.5px solid var(--ocre);border-radius:0;width:100%;max-width:420px}
+.nombre input:focus-visible{outline:3px solid #FFF8EC;outline-offset:2px}
+.nombre .gr{font-family:Georgia,'Times New Roman',serif;font-size:clamp(44px,9vw,76px);line-height:1.15;color:#F0C98A;margin:22px 0 4px;min-height:1.2em;word-break:break-word}
+.nombre .letras{font-size:16px;color:#EAD9BC;margin:0;min-height:1.6em}
+.nombre .propio{margin:16px 0 0;padding:14px 16px;border-left:4px solid var(--ocre);background:rgba(201,146,58,.12);font-size:17px}
+.nombre .propio b{font-family:Georgia,serif;font-size:24px;color:#FFF8EC;font-weight:400}
+.nombre .nota{margin:18px 0 0;font-size:14.5px;color:#D9C7A8}
+@media (max-width:620px){.nombre .caja{padding:26px 20px}.nombre h2{font-size:32px}}
 </style>
 </head>
 <body>
@@ -753,6 +768,58 @@ $('j-exp').innerHTML='<b>'+(ok?'¡Correcto! ':'Casi. ')+'</b>'+q[3];var s=$('j-s
 function fin(){var m=ac===N?'¡Optime! Tienes madera de filólogo.':ac>=N-2?'¡Muy bien! Ya hablas latín y griego sin saberlo.':'Las palabras guardan sorpresas. Prueba otra vez: salen palabras distintas.';
 zona.innerHTML='<p class="final" tabindex="-1" id="j-fin">Has acertado '+ac+' de '+N+'.</p><p class="preg">'+m+'</p><button type="button" class="sig" id="j-otra">Jugar otra vez</button>';$('j-otra').addEventListener('click',empezar);$('j-fin').focus()}
 empezar();
+})();
+</script>
+
+<section id="nombre" class="nombre">
+  <div class="wrap">
+    <div class="caja">
+      <p class="eyebrow">Otro juego</p>
+      <h2>Escribe tu nombre en griego</h2>
+      <p class="intro">Teclea tu nombre y míralo con las letras del alfabeto griego, las mismas que usaron Homero y Platón.</p>
+      <label for="n-in">Tu nombre</label>
+      <input id="n-in" type="text" maxlength="24" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="Por ejemplo, Lucía">
+      <p class="gr" id="n-gr" lang="el" aria-live="polite"></p>
+      <p class="letras" id="n-let"></p>
+      <p class="propio" id="n-pro" hidden></p>
+      <p class="nota">Es una adaptación aproximada, letra a letra y por el sonido: el griego no tiene todos los sonidos del castellano (la "ch", la "j" o la "ñ" se escriben con la letra más parecida). No se guarda ni se envía nada de lo que escribas.</p>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+var NOM={alfa:'α',beta:'β',gamma:'γ',delta:'δ',épsilon:'ε',dseta:'ζ',eta:'η',zeta:'θ',iota:'ι',kappa:'κ',lambda:'λ',my:'μ',ny:'ν',xi:'ξ',ómicron:'ο',pi:'π',rho:'ρ',sigma:'σ',tau:'τ',ípsilon:'υ',fi:'φ',ji:'χ',psi:'ψ',omega:'ω'},L={};
+for(var k in NOM)L[NOM[k]]=k;L['ς']='sigma';
+var AC={'á':'ά','é':'έ','í':'ί','ó':'ό','ú':'ού'},V={a:'α',e:'ε',i:'ι',o:'ο',u:'ου',y:'ι'},
+C={b:'β',v:'β',d:'δ',f:'φ',k:'κ',l:'λ',m:'μ',n:'ν',p:'π',r:'ρ',s:'σ',t:'τ',x:'ξ',z:'ζ',j:'χ',w:'ου','ñ':'νι','ç':'σ'};
+var PROP={alejandro:['Ἀλέξανδρος','el que protege a los hombres'],alejandra:['Ἀλεξάνδρα','la que protege a los hombres'],sofia:['Σοφία','sabiduría'],irene:['Εἰρήνη','paz'],andres:['Ἀνδρέας','valiente'],andrea:['Ἀνδρέας','valiente'],jorge:['Γεώργιος','el que trabaja la tierra'],nicolas:['Νικόλαος','victoria del pueblo'],felipe:['Φίλιππος','amigo de los caballos'],angel:['Ἄγγελος','mensajero'],angela:['Ἀγγέλα','mensajera'],esteban:['Στέφανος','corona'],estefania:['Στεφανία','corona'],pedro:['Πέτρος','piedra'],teodoro:['Θεόδωρος','regalo de dios'],dorotea:['Δωροθέα','regalo de dios'],zoe:['Ζωή','vida'],melisa:['Μέλισσα','abeja'],eugenia:['Εὐγενία','bien nacida'],eugenio:['Εὐγένιος','bien nacido'],sebastian:['Σεβαστιανός','venerable'],gregorio:['Γρηγόριος','vigilante'],hector:['Ἕκτωρ','el héroe que defendió Troya'],penelope:['Πηνελόπη','la esposa de Ulises'],elena:['Ἑλένη','la Helena de Troya'],helena:['Ἑλένη','la Helena de Troya']};
+function sinA(t){return t.normalize('NFD').replace(/[\u0301\u0308]/g,'').normalize('NFC')}
+function tr(w){var o='',i=0,c,n;w=w.toLowerCase();
+while(i<w.length){c=w[i];n=w[i+1]||'';
+if(c==='c'&&n==='h'){o+='χ';i+=2;continue}
+if(c==='l'&&n==='l'){o+='λλ';i+=2;continue}
+if(c==='p'&&n==='h'){o+='φ';i+=2;continue}
+if(c==='t'&&n==='h'){o+='θ';i+=2;continue}
+if(c==='p'&&n==='s'){o+='ψ';i+=2;continue}
+if(c==='o'&&n==='u'){o+='ου';i+=2;continue}
+if(c==='q'){o+='κ';i+=(n==='u'?2:1);continue}
+if(c==='g'){var m=sinA(n);if(n==='u'&&/[eiéí]/.test(w[i+2]||'')){o+='γ';i+=2;continue}if(n==='ü'){o+='γου';i+=2;continue}o+=(m==='e'||m==='i')?'χ':'γ';i++;continue}
+if(c==='c'){var m2=sinA(n);o+=(m2==='e'||m2==='i')?'σ':'κ';i++;continue}
+if(c==='h'){i++;continue}
+if(AC[c]){o+=AC[c];i++;continue}
+if(c==='ü'){o+='ου';i++;continue}
+if(V[c]){o+=V[c];i++;continue}
+if(C[c]){o+=C[c];i++;continue}
+if(c===' '||c==='-'){o+=c;i++;continue}
+i++}
+return o.split(/([ -])/).map(function(p){if(p===' '||p==='-'||!p)return p;p=p.replace(/σ$/,'ς');return p.charAt(0).toUpperCase()+p.slice(1)}).join('')}
+var inp=document.getElementById('n-in'),gr=document.getElementById('n-gr'),let_=document.getElementById('n-let'),pro=document.getElementById('n-pro');
+function pinta(){var v=inp.value.trim(),g=tr(v);gr.textContent=g;
+var ls=[];sinA(g.toLowerCase()).replace(/[ -]/g,'').split('').forEach(function(ch){if(L[ch])ls.push(L[ch])});
+let_.textContent=ls.length?'Letras: '+ls.join(', ')+'.':'';
+var p=PROP[sinA(v.toLowerCase()).replace(/ñ/g,'n')];
+if(p){pro.hidden=false;pro.innerHTML='Tu nombre ya es griego. En griego antiguo se escribe <b lang="grc">'+p[0]+'</b> y significa "'+p[1]+'".'}else{pro.hidden=true;pro.textContent=''}}
+inp.addEventListener('input',pinta);
 })();
 </script>
 
