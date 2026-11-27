@@ -399,3 +399,5 @@ header.top nav a[aria-current="page"]{color:#F0C98A}
 .cab-pag.con-arte .banda{margin-top:36px}
 .banda.entera{background:var(--negro);text-align:center}
 .banda.entera img{height:auto;max-width:960px;margin:0 auto}
+
+.testimonio .grid.cuatro{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));column-gap:64px}
