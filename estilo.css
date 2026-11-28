@@ -444,3 +444,27 @@ header.top nav a[aria-current="page"]{color:#F0C98A}
 /* mención a los REA en Quiénes somos */
 .profe-rea{margin-top:12px;padding-top:12px;border-top:1px solid var(--marfil-2);font-size:15.5px;color:#5A4A36}
 .profe-rea a{font-weight:600;color:var(--rojo);white-space:nowrap}
+
+/* noticias */
+.noticias{padding:76px 0}
+.not-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:22px;margin-top:30px}
+.not-lista{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:26px}
+.noticia{background:#FBF6EE;border:1px solid var(--ocre);display:flex;flex-direction:column}
+.noticia img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-bottom:4px solid var(--rojo)}
+.not-c{padding:18px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.not-c time{font-family:var(--sc);font-size:15px;letter-spacing:.12em;color:var(--ocre-osc)}
+.not-c h3{font-size:25px;line-height:1.15;color:var(--rojo-osc)}
+.not-c p{font-size:16px;margin:0;color:#3A3027}
+.not-c .not-enl{margin-top:auto;padding-top:8px;display:flex;flex-wrap:wrap;gap:6px 18px}
+.not-enl a{font-weight:600;color:var(--rojo);font-size:15.5px}
+.not-todas{margin-top:26px;font-size:17px;font-weight:600}
+.not-todas a{color:var(--rojo)}
+
+/* movimiento suave (solo si no se ha pedido reducir el movimiento) */
+@media (prefers-reduced-motion:no-preference){
+  .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .rv.visto{opacity:1;transform:none}
+  .banda:not(.entera){overflow:hidden}
+  .banda:not(.entera) img{animation:acercar 40s ease-in-out infinite alternate;transform-origin:50% 50%}
+  @keyframes acercar{from{transform:scale(1)}to{transform:scale(1.08)}}
+}
