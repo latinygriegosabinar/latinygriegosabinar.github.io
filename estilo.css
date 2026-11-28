@@ -456,6 +456,7 @@ header.top nav a[aria-current="page"]{color:#F0C98A}
 .not-c h3{font-size:25px;line-height:1.15;color:var(--rojo-osc)}
 .not-c p{font-size:16px;margin:0;color:#3A3027}
 .not-c .not-enl{margin-top:auto;padding-top:8px;display:flex;flex-wrap:wrap;gap:6px 18px}
+.not-c .not-cred{font-size:12.5px;color:#6b5d4f;margin:8px 0 0;line-height:1.4}
 .not-enl a{font-weight:600;color:var(--rojo);font-size:15.5px}
 .not-todas{margin-top:26px;font-size:17px;font-weight:600}
 .not-todas a{color:var(--rojo)}
