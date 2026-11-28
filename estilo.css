@@ -401,3 +401,16 @@ header.top nav a[aria-current="page"]{color:#F0C98A}
 .banda.entera img{height:auto;max-width:960px;margin:0 auto}
 
 .testimonio .grid.cuatro{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));column-gap:64px}
+
+/* Latín I en abierto (REA) */
+.recurso2.sda{justify-content:flex-start;gap:8px;padding-top:0}
+.sda-img{display:block;width:calc(100% + 44px);max-width:none;margin:0 -22px 10px;height:auto;aspect-ratio:3/2;object-fit:cover;border-bottom:4px solid var(--rojo)}
+.sda-cred{margin:auto 0 0;padding-top:10px;font-size:12.5px;line-height:1.45;color:#7A6A55;font-weight:400}
+.sda-cred a{color:inherit}
+.sda-ante{font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#8A6A2E}
+.sda-tit{font-family:var(--serif);font-size:26px;margin-top:-4px;font-weight:600;color:var(--rojo-osc);line-height:1.2}
+.recurso2.sda small{font-size:15px;font-weight:400;color:#5A4A35;line-height:1.45}
+.recurso2.sda .vers{flex-direction:column;gap:6px;margin-top:4px}
+.crea{margin-top:22px;font-size:16.5px;font-weight:600}
+/* texto solo para lectores de pantalla */
+.vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
