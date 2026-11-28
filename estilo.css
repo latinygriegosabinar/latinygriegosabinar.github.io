@@ -440,3 +440,7 @@ header.top nav a[aria-current="page"]{color:#F0C98A}
 .dia-img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-bottom:3px solid var(--rojo);margin-bottom:6px}
 .dia-cred{margin:12px 0 0;font-size:12.5px;color:#7A6A55}
 .dia-cred a{color:inherit}
+
+/* mención a los REA en Quiénes somos */
+.profe-rea{margin-top:12px;padding-top:12px;border-top:1px solid var(--marfil-2);font-size:15.5px;color:#5A4A36}
+.profe-rea a{font-weight:600;color:var(--rojo);white-space:nowrap}
