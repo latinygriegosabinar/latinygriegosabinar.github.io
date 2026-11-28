@@ -423,3 +423,12 @@ header.top nav a[aria-current="page"]{color:#F0C98A}
 .grupo-cred{margin:4px 0 0;font-size:12.5px;line-height:1.45;color:#7A6A55}
 .grupo-cred a{color:inherit}
 @media (max-width:560px){.grupo-cab{gap:14px;align-items:flex-start}.grupo-cab img{width:108px;height:72px}}
+
+/* miniaturas de portada en Recursos */
+.mini{flex:none;width:60px;height:80px;object-fit:cover;object-position:top;border:1px solid #D9C8A8;box-shadow:0 1px 3px rgba(27,23,20,.18);background:#fff}
+.mini.vacia{display:flex;align-items:center;justify-content:center;background:var(--rojo);border-color:var(--rojo);color:#F0C98A;font-family:var(--serif);font-size:34px;line-height:1}
+.recurso .mini + div{flex:1}
+.recurso{justify-content:flex-start}
+.recurso span.f{margin-left:auto}
+.recurso2.con-mini{flex-direction:row;align-items:center;justify-content:flex-start;gap:16px}
+.recurso2.con-mini .r2c{display:flex;flex-direction:column;gap:6px}
