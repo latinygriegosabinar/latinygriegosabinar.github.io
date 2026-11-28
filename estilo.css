@@ -432,3 +432,11 @@ header.top nav a[aria-current="page"]{color:#F0C98A}
 .recurso span.f{margin-left:auto}
 .recurso2.con-mini{flex-direction:row;align-items:center;justify-content:flex-start;gap:16px}
 .recurso2.con-mini .r2c{display:flex;flex-direction:column;gap:6px}
+
+/* iconos de las áreas de estudio */
+.area-tit{display:inline-flex;align-items:center;gap:10px}
+.ico-area{width:34px;height:34px;flex:none;color:var(--ocre-osc)}
+/* imágenes de "Un día en clase" */
+.dia-img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-bottom:3px solid var(--rojo);margin-bottom:6px}
+.dia-cred{margin:12px 0 0;font-size:12.5px;color:#7A6A55}
+.dia-cred a{color:inherit}
