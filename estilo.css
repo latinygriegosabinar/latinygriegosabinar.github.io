@@ -405,7 +405,7 @@ header.top nav a[aria-current="page"]{color:#F0C98A}
 /* Latín I en abierto (REA) */
 .recurso2.sda{justify-content:flex-start;gap:8px;padding-top:0}
 .sda-img{display:block;width:calc(100% + 44px);max-width:none;margin:0 -22px 10px;height:auto;aspect-ratio:3/2;object-fit:cover;border-bottom:4px solid var(--rojo)}
-.sda-cred{margin:auto 0 0;padding-top:10px;font-size:12.5px;line-height:1.45;color:#7A6A55;font-weight:400}
+.sda-cred{margin:auto 0 0;padding-top:10px;font-size:12.5px;line-height:1.45;color:#665847;font-weight:400}
 .sda-cred a{color:inherit}
 .sda-ante{font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#8A6A2E}
 .sda-tit{font-family:var(--serif);font-size:26px;margin-top:-4px;font-weight:600;color:var(--rojo-osc);line-height:1.2}
@@ -420,7 +420,7 @@ header.top nav a[aria-current="page"]{color:#F0C98A}
 .grupo-cab img{flex:none;width:150px;height:100px;object-fit:cover;border-bottom:3px solid var(--rojo)}
 .recursos .grupo-cab h3.subrec{margin:0}
 .recursos .grupo-cab + .grid{margin-top:0}
-.grupo-cred{margin:4px 0 0;font-size:12.5px;line-height:1.45;color:#7A6A55}
+.grupo-cred{margin:4px 0 0;font-size:12.5px;line-height:1.45;color:#665847}
 .grupo-cred a{color:inherit}
 @media (max-width:560px){.grupo-cab{gap:14px;align-items:flex-start}.grupo-cab img{width:108px;height:72px}}
 
@@ -438,7 +438,7 @@ header.top nav a[aria-current="page"]{color:#F0C98A}
 .ico-area{width:34px;height:34px;flex:none;color:var(--ocre-osc)}
 /* imágenes de "Un día en clase" */
 .dia-img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-bottom:3px solid var(--rojo);margin-bottom:6px}
-.dia-cred{margin:12px 0 0;font-size:12.5px;color:#7A6A55}
+.dia-cred{margin:12px 0 0;font-size:12.5px;color:#665847}
 .dia-cred a{color:inherit}
 
 /* mención a los REA en Quiénes somos */
